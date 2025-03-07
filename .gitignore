@@ -1,0 +1,3 @@
+# Ignore all JSON and JSONL files
+*.json
+*.jsonl
