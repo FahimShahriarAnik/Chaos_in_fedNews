@@ -1,0 +1,54 @@
+removed tag ---------- this post has been removed by the moderators of r/fednews.
+deleted tag ---------- Sorry, this post was deleted by the person who originally posted it.
+
+
+Top 10 Active Users:
+ author
+[deleted]               248
+presfenol                92
+Next-Coconut8461         58
+AlarmingHat5154          44
+Great_Explanation_64     43
+FedUnionist              39
+Mynameis__--__           37
+Cold-Memory-2493         33
+Simple_Panda6232         33
+N0rma1_guy               33
+Name: count, dtype: int64
+
+Engagement Trends:
+         avg_comments   avg_score
+period                          
+After      22.838468  159.868879
+Before     28.585736   38.945372
+
+
+output of tf-idf on posts.json
+
+################## need to revise what tf-idf is, what this output means, and an way to visualize this
+
+Top Keywords:
+ removed         4405.134900
+federal          925.546464
+employees        842.604421
+email            668.260149
+opm              596.366017
+just             574.550055
+probationary     559.272298
+work             499.725008
+government       435.732235
+https            426.757736
+workers          426.366294
+people           424.300144
+new              408.981765
+know             408.502392
+doge             406.703015
+employee         406.456974
+agency           391.722452
+don              388.813616
+job              387.381388
+fired            385.988904
+
+
+after doing initial tf-idf analysis with 20 keywords, saw high tf idf score of removed, investigated and found out that there are 15677 posts with no selftext, only the value removed, means removed by moderators.
+so removed the word removed from tf-idf analysis. ------------- need to consult with prof.

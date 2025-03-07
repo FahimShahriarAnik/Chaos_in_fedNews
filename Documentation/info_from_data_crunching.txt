@@ -1,0 +1,3 @@
+number of posts in two month dataset -- 31603
+
+number of commments in two month dataset -- 815147
