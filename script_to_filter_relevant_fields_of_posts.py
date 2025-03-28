@@ -3,7 +3,9 @@ import json
 # Define fields to KEEP (based on your research goals)
 RELEVANT_FIELDS = {
     "author",  # User analysis
+    "id",  # Unique identifier of post
     "created_utc",  # Temporal analysis
+    "url", # actual full url
     "title",  # Topic modeling
     "selftext",  # Topic modeling
     "num_comments",  # Engagement

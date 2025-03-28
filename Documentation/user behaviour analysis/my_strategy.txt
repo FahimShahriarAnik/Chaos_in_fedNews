@@ -2,4 +2,6 @@ look into this: Ways i can connect events to the activities in the subreddit.
 
 first i will look into recent acitivities.
 
-executive orders, agency announcements related to fednews, like usaid
+executive orders, agency announcements related to fednews, like usaid (done)
+
+then, i will process comments jsonl file.
