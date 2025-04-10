@@ -1,0 +1,27 @@
+1. Ways i can connect events to the activities in the subreddit. -- Connect specific executive orders/events to subreddit user activities. (Dimension A: Event-Activity Relationships)
+
+2. strategizing against recent events -- How users strategize against events and plan for unforeseen scenarios. (Dimension B: Strategic and Reactive User Behavior)
+
+3. free form activism (Dimension B: Strategic and Reactive User Behavior)
+
+4. how are people planning to tackle the unforeseen scenarios. (Dimension B: Strategic and Reactive User Behavior)
+
+5. interuptor time series based on the sudden spike. (Dimension A: Event-Activity Relationships)
+
+6. difference -- indifference -- convo in other sub vs that sub. how is this affecting industry layoffs not funded by govt. (Dimension C: Comparative Analysis and Broader Context)
+
+7. compare how industry layoffs is going on now compared to same time in 2023, 2024. (Dimension C: Comparative Analysis and Broader Context)
+
+how we can inform the public how people do social movements, what is effective, what info works the people affected.
+
+before april 10---
+
+compiled relevant EO's from federal register: https://www.federalregister.gov/presidential-documents/executive-orders/donald-trump/2025
+
+planning april 10----
+
+Immediate Priority: Dimension A (Event-Activity Relationships)
+
+intereseting orders: 
+EO 14212	New Telework Policy: Minimum 3 Days In-Office on Feb 12, 25.
+EO 14217	Commencing the Reduction of the Federal Bureaucracy on Feb 19, 25.
