@@ -25,3 +25,17 @@ Immediate Priority: Dimension A (Event-Activity Relationships)
 intereseting orders: 
 EO 14212	New Telework Policy: Minimum 3 Days In-Office on Feb 12, 25.
 EO 14217	Commencing the Reduction of the Federal Bureaucracy on Feb 19, 25.
+
+work from home related:
+EO 14148    rescinds prior remote work policies.
+EO 14212	New Telework Policy: Minimum 3 Days In-Office on Feb 12, 25. 
+
+april 16--
+
+went through all posts in DOGE twitter handle and collected timeline, hihglighted posts.
+
+Saved 405 filtered posts to topicwise_posts/dei_mentions_posts.jsonl
+
+Saved 995 filtered posts to topicwise_posts/doge_mentions_posts.jsonl
+
+Saved 805 filtered posts to topicwise_posts/wfh_mentions_posts.jsonl
