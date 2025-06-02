@@ -51,6 +51,3 @@ if __name__ == "__main__":
     output_file_path = "2_months_data/filtered_comments.jsonl"  # Replace with desired output
     filter_fields(input_file_path, output_file_path)
     print(f"Filtered data saved to {output_file_path}")
-
-
-    1hr46a2
