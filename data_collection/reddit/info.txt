@@ -1,0 +1,43 @@
+Total number of posts -- 49403 -- fednews jan 25 upto May 1, 25
+
+Total number of posts -- 305444 -- jobs jan 22 upto May 1, 25
+
+Total number of posts -- 11238 -- layoffs Nov 12, 22 upto april 25
+
+
+Total number of comments -- fednews jan 25 upto May 1, 25 -- 1408487
+
+Total number of comments --  jobs jan 22 upto feb 09, 25 --  2704000
+
+Total number of comments --  layoffs Feb 22, 22 upto May 1, 25 --  418769
+
+
+********layoffs subreddit -- 
+11238 posts
+418769 comments
+********filtered posts by flairs********
+recently laid off: 3680
+job hunting: 1037
+about to be laid off: 290
+previously laid off: 588
+
+
+********Jobs subreddit -- 
+305444 posts
+2704000 comments
+********filtered posts by flairs********
+job searching: 43915
+leaving a job: 22349
+unemployment: 6328
+rejections: 5107
+layoffs: 3447
+
+
+********fednews subreddit -- 
+49403 posts
+418769 comments
+
+********Teamblind Layoffs Channel********
+Total number of posts: 9407
+Total comments across all posts: 257843
+Date range: 2022-01-02 to 2025-06-18
