@@ -14,12 +14,12 @@ from selenium.webdriver.support import expected_conditions as EC
 MIN_DATE = date(2022, 1, 1)  # Use simple date object (no time)
 BASE_URL = "https://www.teamblind.com"
 TOPIC_URL = f"{BASE_URL}/topics/General-Topics/Layoffs"
-OUTPUT_FILE = 'final_scrapping_v2.jsonl'  # JSON Lines format
-LOGGER_FILE = 'teamblind_scraper_LOG_v2.log'
+OUTPUT_FILE = 'final_scrapping_comments_from_posts.jsonl'  # JSON Lines format
+LOGGER_FILE = 'teamblind_scraper_LOG_comments_from_posts.log'
 
 SCRAPING_SUCCESSFULL = 0
 SCRAPING_FAILED = 0
-SCRAP_FAILED_URLS_FILE = 'scrap_failed_urls.txt'
+SCRAP_FAILED_URLS_FILE = 'scrap_failed_urls_comments_from_posts.txt'
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -196,7 +196,11 @@ def scrape_single_post(url):
         if response.status_code == 429:
             logger.warning(f"Rate limited (429) on {url}")
 
-
+        if response.status_code != 200:
+            SCRAPING_FAILED += 1
+            append_failed_url(url)  
+            logger.error(f"Failed to fetch {url} with status code {response.status_code}")
+            return None, False
         post_data = extract_json_ld(response.text)
         if not post_data:
             SCRAPING_FAILED += 1
@@ -351,9 +355,15 @@ if __name__ == "__main__":
         with open(OUTPUT_FILE, 'w') as f:
             pass  # Create empty file
     
-    reason = scrape_layoffs()
 
-    logger.info(f"Stopping reason: {reason}")
+    # Read the JSONL file and extract URLs
+    with open('teamblind_layoffs_posts_completed_scrapping.jsonl', 'r') as file:
+        for line in file:
+            # Parse JSON object from each line
+            entry = json.loads(line)
+            # Extract and print the URL
+            url = entry['url']
+            scrape_single_post(url)
 
     with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
         line_count = sum(1 for _ in f)
