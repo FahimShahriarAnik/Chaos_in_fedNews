@@ -9,9 +9,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-MIN_DATE = date(2024, 1, 1)  # Use simple date object (no time)
+MIN_DATE = date(2025, 6, 19)  # Use simple date object (no time)
 BASE_URL = "https://www.teamblind.com"
 TOPIC_URL = f"{BASE_URL}/topics/General-Topics/Layoffs"
+OUTPUT_FILE = 'posttesting.json'  # JSON Lines format
+
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -54,6 +56,7 @@ def scrape_post(url):
         
         post_data = extract_json_ld(response.text)
         if not post_data:
+            print(f"No JSON-LD data found for {url}")
             return None, False
             
         # Extract just the date part (first 10 characters: YYYY-MM-DD)
@@ -61,7 +64,7 @@ def scrape_post(url):
         # Convert to date object
         post_date = datetime.strptime(post_date_str, "%Y-%m-%d").date()
         
-        if post_date <= MIN_DATE:
+        if post_date < MIN_DATE:
             return None, True  # Post is too old
             
         return {
@@ -116,7 +119,7 @@ def process_new_posts(driver, processed_links, all_posts):
 
 def save_results(posts):
     """Save results to JSON file incrementally"""
-    with open('teamblind_layoffs_posts.json', 'w', encoding='utf-8') as f:
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(posts, f, ensure_ascii=False, indent=2)
 
 def scrape_layoffs():
@@ -151,13 +154,6 @@ def scrape_layoffs():
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(2.5)  # Allow content to load
             
-            # Check for end of content message
-            end_messages = driver.find_elements(By.XPATH, "//*[contains(., 'No more posts to load')]")
-            if end_messages:
-                stop_reason = "Detected end of content message"
-                print(stop_reason)
-                break
-            
             # Process new posts
             reason = process_new_posts(driver, processed_links, all_posts)
             print(f"Total posts scraped until now: {len(all_posts)}")
@@ -185,6 +181,6 @@ def scrape_layoffs():
 
 if __name__ == "__main__":
     posts, reason = scrape_layoffs()
-    save_results(posts)
+    #save_results(posts)
     print(f"Saved {len(posts)} posts to teamblind_layoffs_posts.json")
     print(f"Stopping reason: {reason}")
