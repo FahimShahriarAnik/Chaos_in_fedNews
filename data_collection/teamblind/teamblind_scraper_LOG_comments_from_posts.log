@@ -1,0 +1,100 @@
+2025-06-24 21:13:35,938 - INFO - ==================================================
+2025-06-24 21:13:35,938 - INFO - Starting TeamBlind Scraper
+2025-06-24 21:13:35,938 - INFO - Target date range: >= 2022-01-01
+2025-06-24 21:13:35,939 - INFO - ==================================================
+2025-06-24 21:15:24,107 - INFO - Successfully scraped 200 posts so far
+2025-06-24 21:15:24,107 - INFO - Error scraping https://www.teamblind.com/post/no-more-layoffs-trump-said-he-is-easing-tensions-with-china-and-lowering-tariffs-stock-market-booming-ip2v8tbw: 'post_date_str'
+2025-06-24 21:17:12,851 - INFO - Successfully scraped 400 posts so far
+2025-06-24 21:17:12,851 - INFO - Error scraping https://www.teamblind.com/post/starbucks-public-restroom-otaopsr5: 'post_date_str'
+2025-06-24 21:19:07,283 - INFO - Successfully scraped 600 posts so far
+2025-06-24 21:19:07,283 - INFO - Error scraping https://www.teamblind.com/post/bias-against-laid-off-employees-fw2tr0l8: 'post_date_str'
+2025-06-24 21:20:53,734 - INFO - Successfully scraped 800 posts so far
+2025-06-24 21:20:53,734 - INFO - Error scraping https://www.teamblind.com/post/silent-layoffs-in-2024-6wdj4ajb: 'post_date_str'
+2025-06-24 21:22:43,949 - INFO - Successfully scraped 1000 posts so far
+2025-06-24 21:22:43,949 - INFO - Error scraping https://www.teamblind.com/post/search-for-a-recruiter-tehhrona: 'post_date_str'
+2025-06-24 21:24:35,508 - INFO - Successfully scraped 1200 posts so far
+2025-06-24 21:24:35,509 - INFO - Error scraping https://www.teamblind.com/post/layoffs-at-amat-cgkeetz7: 'post_date_str'
+2025-06-24 21:26:35,946 - INFO - Successfully scraped 1400 posts so far
+2025-06-24 21:26:35,946 - INFO - Error scraping https://www.teamblind.com/post/are-we-not-posting-much-anymore-gkln8kae: 'post_date_str'
+2025-06-24 21:28:22,724 - INFO - Successfully scraped 1600 posts so far
+2025-06-24 21:28:22,724 - INFO - Error scraping https://www.teamblind.com/post/spotify-ceo-is-shocked-by-negative-impact-of-recent-layoffs-bibvutkt: 'post_date_str'
+2025-06-24 21:30:17,554 - INFO - Successfully scraped 1800 posts so far
+2025-06-24 21:30:17,554 - INFO - Error scraping https://www.teamblind.com/post/blind-is-too-mainstream-coasters-posting-here-is-triggering-layoffs-mvxzsvqt: 'post_date_str'
+2025-06-24 21:32:05,661 - INFO - Successfully scraped 2000 posts so far
+2025-06-24 21:32:05,661 - INFO - Error scraping https://www.teamblind.com/post/even-government-employees-will-not-be-safeapocalypse-nowend-of-daysgame-over-ow3qpwl7: 'post_date_str'
+2025-06-24 21:33:58,812 - INFO - Successfully scraped 2200 posts so far
+2025-06-24 21:33:58,812 - INFO - Error scraping https://www.teamblind.com/post/cisco-layoff-2024-ec64cjpb: 'post_date_str'
+2025-06-24 21:35:48,963 - INFO - Successfully scraped 2400 posts so far
+2025-06-24 21:35:48,963 - INFO - Error scraping https://www.teamblind.com/post/prime-video-layoff-moyarjwh: 'post_date_str'
+2025-06-24 21:37:33,598 - INFO - Successfully scraped 2600 posts so far
+2025-06-24 21:37:33,598 - INFO - Error scraping https://www.teamblind.com/post/need-a-referral-for-meta-y6zup5ox: 'post_date_str'
+2025-06-24 21:39:35,651 - INFO - Successfully scraped 2800 posts so far
+2025-06-24 21:39:35,651 - INFO - Error scraping https://www.teamblind.com/post/comcast-massive-25-layoffs-z1y8pvsh: 'post_date_str'
+2025-06-24 21:41:29,343 - INFO - Successfully scraped 3000 posts so far
+2025-06-24 21:41:29,343 - INFO - Error scraping https://www.teamblind.com/post/geico-has-started-mass-layoff-64ceskfg: 'post_date_str'
+2025-06-24 21:43:09,948 - INFO - Successfully scraped 3200 posts so far
+2025-06-24 21:43:09,949 - INFO - Error scraping https://www.teamblind.com/post/meridianlink-referral-kzmjshqp: 'post_date_str'
+2025-06-24 21:45:05,550 - INFO - Successfully scraped 3400 posts so far
+2025-06-24 21:45:05,551 - INFO - Error scraping https://www.teamblind.com/post/google-role-eliminations-o6veaobr: 'post_date_str'
+2025-06-24 21:47:00,870 - INFO - Successfully scraped 3600 posts so far
+2025-06-24 21:47:00,870 - INFO - Error scraping https://www.teamblind.com/post/need-career-advice-y04jspjd: 'post_date_str'
+2025-06-24 21:48:49,768 - INFO - Successfully scraped 3800 posts so far
+2025-06-24 21:48:49,768 - INFO - Error scraping https://www.teamblind.com/post/linkedin-spam-please-stop-again-na270w2r: 'post_date_str'
+2025-06-24 21:50:30,913 - INFO - Successfully scraped 4000 posts so far
+2025-06-24 21:50:30,913 - INFO - Error scraping https://www.teamblind.com/post/opendoor-ops-referral-ojqoqn63: 'post_date_str'
+2025-06-24 21:52:22,463 - INFO - Successfully scraped 4200 posts so far
+2025-06-24 21:52:22,463 - INFO - Error scraping https://www.teamblind.com/post/about-to-get-laid-off-uk-referrals-tips-q7hpjzcn: 'post_date_str'
+2025-06-24 21:54:12,726 - INFO - Successfully scraped 4400 posts so far
+2025-06-24 21:54:12,726 - INFO - Error scraping https://www.teamblind.com/post/buzzfeeds-news-shutting-down-ydikg6pb: 'post_date_str'
+2025-06-24 21:55:59,105 - INFO - Successfully scraped 4600 posts so far
+2025-06-24 21:55:59,105 - INFO - Error scraping https://www.teamblind.com/post/someone-on-layoffs-discussion-channel-said-tomorrow-aws-layoffs-bfo4jpkz: 'post_date_str'
+2025-06-24 21:57:44,524 - INFO - Successfully scraped 4800 posts so far
+2025-06-24 21:57:44,524 - INFO - Error scraping https://www.teamblind.com/post/dm-me-for-samsara-referrals-hawun1rf: 'post_date_str'
+2025-06-24 21:59:26,817 - INFO - Successfully scraped 5000 posts so far
+2025-06-24 21:59:26,817 - INFO - Error scraping https://www.teamblind.com/post/can-we-expect-layoff-of-engineers-from-reality-lab-meta-nqxzunfp: 'post_date_str'
+2025-06-24 22:01:29,262 - INFO - Successfully scraped 5200 posts so far
+2025-06-24 22:01:29,262 - INFO - Error scraping https://www.teamblind.com/post/linkedin-premium-request-hyzmedsk: 'post_date_str'
+2025-06-24 22:03:15,919 - INFO - Successfully scraped 5400 posts so far
+2025-06-24 22:03:15,919 - INFO - Error scraping https://www.teamblind.com/post/netflix-layoff-nmyxd703: 'post_date_str'
+2025-06-24 22:05:08,127 - INFO - Successfully scraped 5600 posts so far
+2025-06-24 22:05:08,127 - INFO - Error scraping https://www.teamblind.com/post/looking-for-referrals-after-being-laid-off-from-goldman-sachs-6kam32td: 'post_date_str'
+2025-06-24 22:07:10,147 - INFO - Successfully scraped 5800 posts so far
+2025-06-24 22:07:10,147 - INFO - Error scraping https://www.teamblind.com/post/amazon-has-failed-its-own-leadership-principles-nlcpa3ll: 'post_date_str'
+2025-06-24 22:09:07,660 - INFO - Successfully scraped 6000 posts so far
+2025-06-24 22:09:07,660 - INFO - Error scraping https://www.teamblind.com/post/tech-conundrum-q4w05dyj: 'post_date_str'
+2025-06-24 22:11:04,612 - INFO - Successfully scraped 6200 posts so far
+2025-06-24 22:11:04,613 - INFO - Error scraping https://www.teamblind.com/post/ways-to-remain-in-us-after-layoff-3zksrmpz: 'post_date_str'
+2025-06-24 22:12:57,150 - INFO - Successfully scraped 6400 posts so far
+2025-06-24 22:12:57,150 - INFO - Error scraping https://www.teamblind.com/post/please-file-for-unemployment-if-you-have-been-laid-off-rt1bn00a: 'post_date_str'
+2025-06-24 22:14:57,299 - INFO - Successfully scraped 6600 posts so far
+2025-06-24 22:14:57,299 - INFO - Error scraping https://www.teamblind.com/post/huge-severance-pays-by-big-tech-layoffs-jgejp3ng: 'post_date_str'
+2025-06-24 22:16:50,768 - INFO - Successfully scraped 6800 posts so far
+2025-06-24 22:16:50,769 - INFO - Error scraping https://www.teamblind.com/post/to-those-who-are-layed-off-or-will-be-impacted-by-impending-layoff-my-team-is-hiring-ewufvbks: 'post_date_str'
+2025-06-24 22:18:43,240 - INFO - Successfully scraped 7000 posts so far
+2025-06-24 22:18:43,240 - INFO - Error scraping https://www.teamblind.com/post/tech-firms-lay-off-over-20000-staff-in-first-ten-days-of-2023-as-downturn-bites-xggwv5fh: 'post_date_str'
+2025-06-24 22:20:42,544 - INFO - Successfully scraped 7200 posts so far
+2025-06-24 22:20:42,545 - INFO - Error scraping https://www.teamblind.com/post/salesforce-layoffs-10-of-company-dnhxdrm7: 'post_date_str'
+2025-06-24 22:22:38,600 - INFO - Successfully scraped 7400 posts so far
+2025-06-24 22:22:38,600 - INFO - Error scraping https://www.teamblind.com/post/layoff-probability-ucrn2mjj: 'post_date_str'
+2025-06-24 22:23:25,387 - INFO - Error scraping https://www.teamblind.com/post/real-leaders-care-tgsbjxj2: HTTPSConnectionPool(host='www.teamblind.com', port=443): Read timed out. (read timeout=10)
+2025-06-24 22:24:41,875 - INFO - Successfully scraped 7600 posts so far
+2025-06-24 22:24:41,875 - INFO - Error scraping https://www.teamblind.com/post/elastic-announces-layoffs-with-q2-earnings-hundreds-of-workers-cut-omxmug3w: 'post_date_str'
+2025-06-24 22:26:38,097 - INFO - Successfully scraped 7800 posts so far
+2025-06-24 22:26:38,097 - INFO - Error scraping https://www.teamblind.com/post/reaching-out-to-ex-who-split-savings-and-left-r6tqxnig: 'post_date_str'
+2025-06-24 22:28:32,790 - INFO - Successfully scraped 8000 posts so far
+2025-06-24 22:28:32,791 - INFO - Error scraping https://www.teamblind.com/post/layoffs-are-a-lack-of-scarcity-mentality-j7cv2ahq: 'post_date_str'
+2025-06-24 22:30:30,507 - INFO - Successfully scraped 8200 posts so far
+2025-06-24 22:30:30,507 - INFO - Error scraping https://www.teamblind.com/post/bestmemeever-iupev1mu: 'post_date_str'
+2025-06-24 22:32:22,164 - INFO - Successfully scraped 8400 posts so far
+2025-06-24 22:32:22,164 - INFO - Error scraping https://www.teamblind.com/post/your-role-at-twitter-dr3cytge: 'post_date_str'
+2025-06-24 22:34:22,579 - INFO - Successfully scraped 8600 posts so far
+2025-06-24 22:34:22,579 - INFO - Error scraping https://www.teamblind.com/post/got-piped-from-amazon-and-applying-next-steps-rvw4ehrl: 'post_date_str'
+2025-06-24 22:36:32,567 - INFO - Successfully scraped 8800 posts so far
+2025-06-24 22:36:32,567 - INFO - Error scraping https://www.teamblind.com/post/technical-pm-or-pm-roles-referral-hzwtghzz: 'post_date_str'
+2025-06-24 22:38:19,228 - INFO - Successfully scraped 9000 posts so far
+2025-06-24 22:38:19,228 - INFO - Error scraping https://www.teamblind.com/post/netflix-let-go-300-more-people-rzsybfxq: 'post_date_str'
+2025-06-24 22:40:24,932 - INFO - Successfully scraped 9200 posts so far
+2025-06-24 22:40:24,932 - INFO - Error scraping https://www.teamblind.com/post/all-the-biggest-bay-area-tech-companies-that-have-paused-hiring-718mngik: 'post_date_str'
+2025-06-24 22:42:12,243 - INFO - Output file contains 9399 posts
+2025-06-24 22:42:12,243 - INFO - Successfully scraped 9399 posts
+2025-06-24 22:42:12,243 - INFO - Failed to scrape 7 posts
