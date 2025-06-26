@@ -1,0 +1,204 @@
+Flair,Month,Count
+Job searching,2022-01,909
+Job searching,2022-02,725
+Job searching,2022-03,1143
+Job searching,2022-04,952
+Job searching,2022-05,1041
+Job searching,2022-06,1052
+Job searching,2022-07,1089
+Job searching,2022-08,1104
+Job searching,2022-09,959
+Job searching,2022-10,889
+Job searching,2022-11,900
+Job searching,2022-12,798
+Job searching,2023-01,1012
+Job searching,2023-02,941
+Job searching,2023-03,939
+Job searching,2023-04,747
+Job searching,2023-05,916
+Job searching,2023-06,804
+Job searching,2023-07,1048
+Job searching,2023-08,1204
+Job searching,2023-09,974
+Job searching,2023-10,1022
+Job searching,2023-11,985
+Job searching,2023-12,984
+Job searching,2024-01,1697
+Job searching,2024-02,1451
+Job searching,2024-03,1438
+Job searching,2024-04,1406
+Job searching,2024-05,1388
+Job searching,2024-06,1309
+Job searching,2024-07,1211
+Job searching,2024-08,1381
+Job searching,2024-09,1186
+Job searching,2024-10,1149
+Job searching,2024-11,977
+Job searching,2024-12,948
+Job searching,2025-01,1342
+Job searching,2025-02,1183
+Job searching,2025-03,1386
+Job searching,2025-04,1318
+Job searching,2025-05,8
+Leaving a job,2022-01,428
+Leaving a job,2022-02,414
+Leaving a job,2022-03,651
+Leaving a job,2022-04,635
+Leaving a job,2022-05,586
+Leaving a job,2022-06,676
+Leaving a job,2022-07,642
+Leaving a job,2022-08,690
+Leaving a job,2022-09,548
+Leaving a job,2022-10,557
+Leaving a job,2022-11,523
+Leaving a job,2022-12,474
+Leaving a job,2023-01,525
+Leaving a job,2023-02,486
+Leaving a job,2023-03,528
+Leaving a job,2023-04,358
+Leaving a job,2023-05,406
+Leaving a job,2023-06,435
+Leaving a job,2023-07,518
+Leaving a job,2023-08,590
+Leaving a job,2023-09,483
+Leaving a job,2023-10,501
+Leaving a job,2023-11,491
+Leaving a job,2023-12,489
+Leaving a job,2024-01,869
+Leaving a job,2024-02,656
+Leaving a job,2024-03,649
+Leaving a job,2024-04,627
+Leaving a job,2024-05,690
+Leaving a job,2024-06,638
+Leaving a job,2024-07,583
+Leaving a job,2024-08,621
+Leaving a job,2024-09,608
+Leaving a job,2024-10,621
+Leaving a job,2024-11,451
+Leaving a job,2024-12,477
+Leaving a job,2025-01,461
+Leaving a job,2025-02,576
+Leaving a job,2025-03,625
+Leaving a job,2025-04,560
+Leaving a job,2025-05,3
+Unemployment,2022-01,89
+Unemployment,2022-02,55
+Unemployment,2022-03,89
+Unemployment,2022-04,77
+Unemployment,2022-05,87
+Unemployment,2022-06,110
+Unemployment,2022-07,88
+Unemployment,2022-08,91
+Unemployment,2022-09,78
+Unemployment,2022-10,98
+Unemployment,2022-11,101
+Unemployment,2022-12,88
+Unemployment,2023-01,108
+Unemployment,2023-02,115
+Unemployment,2023-03,125
+Unemployment,2023-04,91
+Unemployment,2023-05,123
+Unemployment,2023-06,121
+Unemployment,2023-07,151
+Unemployment,2023-08,164
+Unemployment,2023-09,166
+Unemployment,2023-10,171
+Unemployment,2023-11,201
+Unemployment,2023-12,158
+Unemployment,2024-01,221
+Unemployment,2024-02,207
+Unemployment,2024-03,211
+Unemployment,2024-04,200
+Unemployment,2024-05,245
+Unemployment,2024-06,234
+Unemployment,2024-07,235
+Unemployment,2024-08,253
+Unemployment,2024-09,237
+Unemployment,2024-10,210
+Unemployment,2024-11,195
+Unemployment,2024-12,189
+Unemployment,2025-01,240
+Unemployment,2025-02,243
+Unemployment,2025-03,235
+Unemployment,2025-04,228
+Rejections,2022-01,73
+Rejections,2022-02,79
+Rejections,2022-03,136
+Rejections,2022-04,105
+Rejections,2022-05,118
+Rejections,2022-06,133
+Rejections,2022-07,120
+Rejections,2022-08,118
+Rejections,2022-09,110
+Rejections,2022-10,83
+Rejections,2022-11,79
+Rejections,2022-12,97
+Rejections,2023-01,100
+Rejections,2023-02,95
+Rejections,2023-03,103
+Rejections,2023-04,69
+Rejections,2023-05,106
+Rejections,2023-06,110
+Rejections,2023-07,114
+Rejections,2023-08,153
+Rejections,2023-09,114
+Rejections,2023-10,113
+Rejections,2023-11,158
+Rejections,2023-12,137
+Rejections,2024-01,181
+Rejections,2024-02,135
+Rejections,2024-03,160
+Rejections,2024-04,183
+Rejections,2024-05,162
+Rejections,2024-06,176
+Rejections,2024-07,157
+Rejections,2024-08,144
+Rejections,2024-09,156
+Rejections,2024-10,128
+Rejections,2024-11,125
+Rejections,2024-12,109
+Rejections,2025-01,152
+Rejections,2025-02,160
+Rejections,2025-03,197
+Rejections,2025-04,158
+Rejections,2025-05,1
+Layoffs,2022-01,34
+Layoffs,2022-02,31
+Layoffs,2022-03,58
+Layoffs,2022-04,31
+Layoffs,2022-05,45
+Layoffs,2022-06,61
+Layoffs,2022-07,64
+Layoffs,2022-08,61
+Layoffs,2022-09,51
+Layoffs,2022-10,53
+Layoffs,2022-11,81
+Layoffs,2022-12,69
+Layoffs,2023-01,97
+Layoffs,2023-02,109
+Layoffs,2023-03,67
+Layoffs,2023-04,71
+Layoffs,2023-05,63
+Layoffs,2023-06,77
+Layoffs,2023-07,79
+Layoffs,2023-08,111
+Layoffs,2023-09,98
+Layoffs,2023-10,89
+Layoffs,2023-11,117
+Layoffs,2023-12,113
+Layoffs,2024-01,131
+Layoffs,2024-02,135
+Layoffs,2024-03,124
+Layoffs,2024-04,119
+Layoffs,2024-05,128
+Layoffs,2024-06,107
+Layoffs,2024-07,68
+Layoffs,2024-08,104
+Layoffs,2024-09,113
+Layoffs,2024-10,101
+Layoffs,2024-11,79
+Layoffs,2024-12,86
+Layoffs,2025-01,93
+Layoffs,2025-02,110
+Layoffs,2025-03,110
+Layoffs,2025-04,109
