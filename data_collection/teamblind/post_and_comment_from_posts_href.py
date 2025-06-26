@@ -251,7 +251,6 @@ def scrape_single_post(url):
         logger.info(f"Error scraping {url}: {str(e)}")
         return None, False
 
-
 def process_new_posts(driver):
     """Process newly loaded posts and return stop reason (or None)"""
     # Get all current post elements
@@ -287,7 +286,6 @@ def process_new_posts(driver):
     # if new_post_data:append_to_output(new_post_data)
     
     return None
-
 
 def scrape_layoffs():
     """Main scraping function with incremental processing"""
@@ -341,8 +339,6 @@ def scrape_layoffs():
         # Close the browser
         driver.quit()
     return stop_reason
-
-
 
 if __name__ == "__main__":
     logger.info("="*50)
