@@ -1,0 +1,40 @@
+2025-07-01 19:43:00,357 - ERROR - Request failed: 422 Client Error: Unprocessable Entity for url: https://arctic-shift.photon-reddit.com/api/posts/search?author=AutoModerator&after=1736161307&before=1745989200&limit=auto&sort=asc&meta-app=download-tool
+2025-07-01 19:50:48,477 - INFO - Processed 2000 users so far
+2025-07-01 20:01:02,891 - INFO - Processed 4000 users so far
+2025-07-01 20:11:15,863 - INFO - Processed 6000 users so far
+2025-07-01 20:19:09,214 - INFO - Processed 8000 users so far
+2025-07-01 20:26:46,615 - INFO - Processed 10000 users so far
+2025-07-01 20:36:47,101 - INFO - Processed 12000 users so far
+2025-07-01 20:44:37,983 - INFO - Processed 14000 users so far
+2025-07-01 20:52:10,685 - INFO - Processed 16000 users so far
+2025-07-01 21:00:35,588 - INFO - Processed 18000 users so far
+2025-07-01 21:13:27,081 - INFO - Processed 20000 users so far
+2025-07-01 21:22:28,534 - ERROR - Request failed: 422 Client Error: Unprocessable Entity for url: https://arctic-shift.photon-reddit.com/api/posts/search?author=Ill_State9479&after=1735711200&before=1745989200&limit=auto&sort=asc&meta-app=download-tool
+2025-07-01 21:22:45,087 - ERROR - Request failed: 422 Client Error: Unprocessable Entity for url: https://arctic-shift.photon-reddit.com/api/posts/search?author=QueeLinx&after=1735711200&before=1745989200&limit=auto&sort=asc&meta-app=download-tool
+2025-07-01 21:22:56,059 - ERROR - Request failed: 422 Client Error: Unprocessable Entity for url: https://arctic-shift.photon-reddit.com/api/posts/search?author=AwkJiff&after=1735711200&before=1745989200&limit=auto&sort=asc&meta-app=download-tool
+2025-07-01 21:23:38,631 - ERROR - Request failed: 422 Client Error: Unprocessable Entity for url: https://arctic-shift.photon-reddit.com/api/posts/search?author=tmj_4477&after=1735711200&before=1745989200&limit=auto&sort=asc&meta-app=download-tool
+2025-07-01 21:24:18,351 - INFO - Processed 22000 users so far
+2025-07-01 21:30:33,891 - INFO - No more posts found
+2025-07-01 21:30:34,047 - INFO - No more posts found
+2025-07-01 21:30:35,041 - INFO - No more posts found
+2025-07-01 21:30:35,478 - INFO - No more posts found
+2025-07-01 21:30:35,633 - INFO - No more posts found
+2025-07-01 21:30:35,795 - INFO - No more posts found
+2025-07-01 21:30:36,374 - INFO - No more posts found
+2025-07-01 21:30:36,533 - INFO - No more posts found
+2025-07-01 21:30:36,686 - INFO - No more posts found
+2025-07-01 21:30:36,844 - INFO - No more posts found
+2025-07-01 21:30:37,160 - INFO - No more posts found
+2025-07-01 21:30:37,594 - INFO - No more posts found
+2025-07-01 21:30:37,760 - INFO - No more posts found
+2025-07-01 21:30:38,406 - INFO - No more posts found
+2025-07-01 21:30:39,562 - INFO - No more posts found
+2025-07-01 21:30:39,874 - INFO - No more posts found
+2025-07-01 21:30:40,040 - INFO - No more posts found
+2025-07-01 21:30:40,547 - INFO - No more posts found
+2025-07-01 21:30:41,203 - INFO - No more posts found
+2025-07-01 21:30:41,360 - INFO - No more posts found
+2025-07-01 21:30:41,530 - INFO - No more posts found
+2025-07-01 21:30:42,095 - INFO - No more posts found
+2025-07-01 21:30:43,665 - INFO - No more posts found
+2025-07-01 21:30:43,670 - INFO - Completed processing. Combined output saved to fednews_author_data.jsonl
