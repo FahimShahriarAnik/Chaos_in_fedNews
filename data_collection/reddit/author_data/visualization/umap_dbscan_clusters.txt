@@ -1,0 +1,23 @@
+Outliers:
+['recruitinghell', 'resumes', 'techsupport', 'Monopoly_GO', 'MonopolyGoTrading', 'PokemonGoRaids', 'USCIS']
+
+Cluster 0: SIZE -- 40 THEME -- Broad personal & life advice (mental-health, relationships, college, etc.
+['jobs', 'AskReddit', 'NoStupidQuestions', 'careerguidance', 'relationship_advice', 'Advice', 'antiwork', 'AskDocs', 'personalfinance', 'cats', 'AskMen', 'dating_advice', 'offmychest', 'legaladvice', 'relationships', 'dating', 'unpopularopinion', 'ask', 'careeradvice', 'ADHD', 'Vent', 'SkincareAddiction', 'AmItheAsshole', 'depression', 'college', 'TooAfraidToAsk', 'Anxiety', 'mentalhealth', 'TrueOffMyChest', 'Adulting', 'work', 'findapath', 'sex', 'AskWomen', 'socialskills', 'TwoXChromosomes', 'CasualConversation', 'rant', 'AITAH', 'selfimprovement']
+
+Cluster 1: SIZE -- 20 THEME -- News + markets + politics (very similar to PCA-2)
+['fednews', 'politics', 'AnythingGoesNews', 'worldnews', 'economy', 'india', 'nba', 'technology', 'wallstreetbets', 'conspiracy', 'news', 'CryptoCurrency', 'Conservative', 'canada', 'developersIndia', 'law', 'Economics', 'videos', 'business', 'facepalm']
+
+Cluster 2: SIZE -- 18 THEME -- Careers / professional growth (Layoffs, learnprogramming, …)
+['Layoffs', 'cscareerquestions', 'Accounting', 'Entrepreneur', 'jobsearchhacks', 'interviews', 'RemoteJobs', 'sales', 'ITCareerQuestions', 'PersonalFinanceCanada', 'FinancialCareers', 'learnprogramming', 'usajobs', 'marketing', 'webdev', 'humanresources', 'smallbusiness', 'RealEstate']
+
+Cluster 3: SIZE -- 16 THEME -- Job-board adverts (matches PCA-1 almost exactly)
+['jobboardsearch', 'RedditJobBoard', 'BinanceTrading', 'InternPlug', 'RemoteHRJobs', 'remotejobsinhr', 'remoteworks', 'losho', 'MarketingJobsHub', 'KillerKuttes', 'JavaScriptJob', 'slutsofsnapchat', 'CodingJobs', 'pythonjob', 'golangjob', 'ReactJSJobs']
+
+Cluster 4: SIZE -- 19 THEME -- Entertainment / hobbies (gaming, memes, YouTube, …)
+['teenagers', 'travel', 'gaming', 'pcmasterrace', 'Christianity', 'buildapc', 'mildlyinfuriating', 'memes', 'movies', 'ChatGPT', 'Showerthoughts', 'Music', 'pics', 'Scams', 'povertyfinance', 'explainlikeimfive', 'iphone', 'youtube', 'funny']
+
+Cluster 5: SIZE -- 35 THEME -- Mixed personal-life & hobby subs (overlaps PCA-5 & part of PCA-3)
+['polls', 'Eldenring', 'raisedbynarcissists', 'BreakUps', 'SuicideWatch', 'autism', 'askgaybros', 'AskUK', 'CPTSD', 'MakeNewFriendsHere', 'RandomThoughts', 'AskNYC', 'GenZ', 'Teachers', 'ApplyingToCollege', 'BaldursGate3', 'pokemongo', 'self', 'pregnant', 'trees', 'gardening', 'islam', 'FortNiteBR', 'AskWomenOver30', 'BPD', 'piercing', 'lonely', 'AskRedditAfterDark', 'walmart', 'houseplants', 'anime', 'Aquariums', 'Sims4', 'adhdwomen', 'OCD']
+
+Cluster 6: SIZE -- 15 THEME -- Practical how-to / household advice (AskHR, DIY, pets, taxes)
+['AskHR', 'MechanicAdvice', 'tipofmytongue', 'loseit', 'whatcarshouldIbuy', 'HomeImprovement', 'Parenting', 'medical_advice', 'dogs', 'tax', 'Cooking', 'CatAdvice', 'Hair', 'askdentists', 'CreditCards']

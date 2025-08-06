@@ -1,0 +1,17 @@
+Cluster 0: SIZE -- 5 THEME -- Q&A / career advice
+['jobs', 'AskReddit', 'NoStupidQuestions', 'careerguidance', 'Advice']
+
+Cluster 1: SIZE -- 13 THEME -- Job-board adverts
+['RedditJobBoard', 'BinanceTrading', 'InternPlug', 'RemoteHRJobs', 'remotejobsinhr', 'losho', 'MarketingJobsHub', 'KillerKuttes', 'JavaScriptJob', 'CodingJobs', 'pythonjob', 'golangjob', 'ReactJSJobs']
+
+Cluster 2: SIZE -- 21 THEME -- News + markets + politicS
+['fednews', 'Layoffs', 'politics', 'worldnews', 'economy', 'india', 'nba', 'technology', 'wallstreetbets', 'conspiracy', 'news', 'RemoteJobs', 'CryptoCurrency', 'Conservative', 'canada', 'FinancialCareers', 'usajobs', 'videos', 'business', 'webdev', 'facepalm']
+
+Cluster 3: SIZE -- 38 THEME -- General interests & work-life
+['teenagers', 'cscareerquestions', 'Accounting', 'Eldenring', 'gaming', 'pcmasterrace', 'Christianity', 'buildapc', 'Entrepreneur', 'memes', 'movies', 'ChatGPT', 'jobsearchhacks', 'Showerthoughts', 'Music', 'interviews', 'sales', 'ITCareerQuestions', 'pics', 'whatcarshouldIbuy', 'HomeImprovement', 'RandomThoughts', 'Parenting', 'GenZ', 'tax', 'Teachers', 'learnprogramming', 'povertyfinance', 'trees', 'gardening', 'marketing', 'iphone', 'youtube', 'funny', 'CreditCards', 'smallbusiness', 'RealEstate', 'anime']
+
+Cluster 4: SIZE -- 3 THEME -- Mobile game 
+['Monopoly_GO', 'MonopolyGoTrading', 'PokemonGoRaids']
+
+Cluster 5: SIZE -- 26 THEME -- Life / mental-health / personal topics
+['polls', 'askgaybros', 'AskUK', 'CPTSD', 'MakeNewFriendsHere', 'PersonalFinanceCanada', 'AskNYC', 'ApplyingToCollege', 'BaldursGate3', 'pokemongo', 'pregnant', 'islam', 'FortNiteBR', 'AskWomenOver30', 'BPD', 'piercing', 'humanresources', 'lonely', 'AskRedditAfterDark', 'walmart', 'USCIS', 'houseplants', 'Aquariums', 'Sims4', 'adhdwomen', 'OCD']

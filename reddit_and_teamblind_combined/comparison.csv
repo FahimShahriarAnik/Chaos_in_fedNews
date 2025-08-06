@@ -1,0 +1,101 @@
+post_id,codes_by_AI,codes_by_researcher,agreement,disagreement
+1,['Financial Insecurity'],['Financial Insecurity'],1,0
+2,"['Seeking information', 'Income Strategies', 'Family Struggle']","['Income Strategies', 'Anticipation & Job Insecurity', 'Family Struggle']",2,2
+3,"['Discussing Severance', 'Seeking legal advice']","['Anticipation & Job Insecurity', 'Discussing Severance', 'Seeking legal advice']",2,1
+4,"['Income Strategies', 'Seeking information']",['Income Strategies'],1,1
+5,['None'],['None'],1,0
+6,"['Seeking information', 'Anticipation & Job Security', 'Health & Well-being']","['Anticipation & Job Insecurity', 'Health & Well-being', 'Income Strategies']",1,4
+7,"['Next Offer in hand', 'Anticipation & Job Security', 'Seeking information']","['Anticipation & Job Insecurity', 'Next Offer in hand']",1,3
+8,['Resource-sharing'],['Resource-sharing'],1,0
+9,"['Seeking information', 'Anticipation & Job Security']",['Anticipation & Job Insecurity'],0,3
+10,"['Structural Critique', 'Anger/Blame']",['Structural Critique'],1,1
+11,['Anger/Blame'],['Anger/Blame'],1,0
+12,['None'],['None'],1,0
+13,"['Resource-sharing', 'Peer Advice']",['Peer Advice'],1,1
+14,['Resource-sharing'],['Anticipation & Job Insecurity'],0,2
+15,"['Seeking information', 'Anticipation & Job Security']",['Anticipation & Job Insecurity'],0,3
+16,['Seeking information'],"['Income Strategies', 'Seeking legal advice']",0,3
+17,['Shock/Disbelief'],['Shock/Disbelief'],1,0
+18,"['Next Offer in hand', 'Health & Well-being', 'Seeking information']","['Resilience/Hope', 'Anticipation & Job Insecurity', 'Frustration/Disappointment', 'Health & Well-being', 'Next Offer in hand', 'Job-search Friction']",2,5
+19,"['Discussing Severance', 'Seeking legal advice']","['Discussing Severance', 'Seeking information']",1,2
+20,"['Structural Critique', 'Blaming the Outgroup']","['Structural Critique', 'Blaming the outgroup', 'Frustration/Disappointment', 'Job-search Friction']",1,4
+21,"['Job-search Friction', 'Frustration/Disappointment']","['Job-search Friction', 'Frustration/Disappointment']",2,0
+22,['None'],['None'],1,0
+23,['None'],['None'],1,0
+24,['None'],['None'],1,0
+25,"['Stigma & Social Reactions', 'Health & Well-being', 'Seeking information']","['Financial Insecurity', 'Health & Well-being']",1,3
+26,['None'],['Discussing Severance'],0,2
+27,['None'],['None'],1,0
+28,['Resilience/Hope'],['Resilience/Hope'],1,0
+29,"['Seeking information', 'Job-search Friction']",['Peer Advice'],0,3
+30,"['Shock/Disbelief', 'Structural Critique']",['Shock/Disbelief'],1,1
+31,"['Solidarity & Story-sharing', 'Resource-sharing']",['Solidarity & Story-sharing'],1,1
+32,['None'],['None'],1,0
+33,['None'],['None'],1,0
+34,"['Income Strategies', 'Next Offer in hand', 'Seeking information']",['Next Offer in hand'],1,2
+35,['None'],['None'],1,0
+36,"['Seeking information', 'Anticipation & Job Security']",['Anticipation & Job Insecurity'],0,3
+37,['None'],['None'],1,0
+38,"['Job-search Friction', 'Frustration/Disappointment']",['Frustration/Disappointment'],1,1
+39,['Career change'],"['Next Offer in hand', 'Career change']",1,1
+40,['Structural Critique'],['Fear/Anxiety'],0,2
+41,"['Seeking information', 'Anticipation & Job Security']",['Next Offer in hand'],0,3
+42,['None'],['None'],1,0
+43,"['Seeking information', 'Income Strategies']","['Job-search Friction', 'Next Offer in hand', 'Career change']",0,5
+44,['Seeking information'],['Peer Advice'],0,2
+45,['Seeking information'],['None'],0,2
+46,['Resource-sharing'],['None'],0,2
+47,['None'],['None'],1,0
+48,"['Seeking information', 'Job-search Friction']",['Career change'],0,3
+49,"['Seeking information', 'Peer Advice']",['Peer Advice'],1,1
+50,['None'],['None'],1,0
+51,"['Seeking information', 'Peer Advice']",['Peer Advice'],1,1
+52,['None'],['None'],1,0
+53,"['Fear/Anxiety', 'Anticipation & Job Security']",['Anticipation & Job Insecurity'],0,3
+54,"['Discussing Severance', 'Seeking information']",['Discussing Severance'],1,1
+55,"['Fear/Anxiety', 'Seeking information']",['Career change'],0,3
+56,['None'],['None'],1,0
+57,['Seeking information'],['Resource-sharing'],0,2
+58,"['Fear/Anxiety', 'Seeking information']",['Career change'],0,3
+59,"['Job-search Friction', 'Seeking information']","['Peer Advice', 'Shock/Disbelief']",0,4
+60,"['Solidarity & Story-sharing', 'Peer Advice']",['Resource-sharing'],0,3
+61,"['Shock/Disbelief', 'Fear/Anxiety']",['Shock/Disbelief'],1,1
+62,"['Frustration/Disappointment', 'Peer Advice']",['Job-search Friction'],0,3
+63,"['Resource-sharing', 'Peer Advice']",['Peer Advice'],1,1
+64,"['Fear/Anxiety', 'Seeking information']",['Career change'],0,3
+65,['None'],['None'],1,0
+66,['Resource-sharing'],['Resource-sharing'],1,0
+67,['None'],['None'],1,0
+68,['Frustration/Disappointment'],['Anticipation & Job Insecurity'],0,2
+69,"['Job-search Friction', 'Seeking information']",['Peer Advice'],0,3
+70,['None'],['None'],1,0
+71,"['Shock/Disbelief', 'Seeking information']","['Health & Well-being', 'Family Struggle']",0,4
+72,"['Seeking information', 'Structural Critique', 'Legal mobilization']",['Structural Critique'],1,2
+73,['None'],['None'],1,0
+74,['None'],['None'],1,0
+75,['None'],['Peer Advice'],0,2
+76,"['Shock/Disbelief', 'Seeking information']",['None'],0,3
+77,['Resilience/Hope'],['Resilience/Hope'],1,0
+78,['None'],['None'],1,0
+79,"['Seeking information', 'Career change']","['Anticipation & Job Insecurity', 'Fear/Anxiety']",0,4
+80,['None'],['None'],1,0
+81,"['Frustration/Disappointment', 'Health & Well-being']",['Frustration/Disappointment'],1,1
+82,"['Seeking information', 'Frustration/Disappointment']",['Anticipation & Job Insecurity'],0,3
+83,['None'],['None'],1,0
+84,"['Seeking information', 'Structural Critique']",['Next Offer in hand'],0,3
+85,['None'],['None'],1,0
+86,['Structural Critique'],['None'],0,2
+87,"['Shock/Disbelief', 'Frustration/Disappointment']",['None'],0,3
+88,"['Fear/Anxiety', 'Anticipation & Job Security']","['Anticipation & Job Insecurity', 'Family Struggle']",0,4
+89,"['Seeking information', 'Next Offer in hand']",['Next Offer in hand'],1,1
+90,"['Fear/Anxiety', 'Seeking information']",['None'],0,3
+91,"['Seeking information', 'Anticipation & Job Security']",['Structural Critique'],0,3
+92,['Stigma & Social Reactions'],['Frustration/Disappointment'],0,2
+93,"['Job-search Friction', 'Frustration/Disappointment']",['Peer Advice'],0,3
+94,"['Shock/Disbelief', 'Seeking information']",['None'],0,3
+95,"['Fear/Anxiety', 'Seeking information']",['Anticipation & Job Insecurity'],0,3
+96,['None'],['None'],1,0
+97,"['Health & Well-being', 'Seeking legal advice']","['Discussing Severance', 'Health & Well-being']",1,2
+98,['Structural Critique'],['Frustration/Disappointment'],0,2
+99,['None'],['None'],1,0
+100,"['Job-search Friction', 'Financial Insecurity', 'Seeking information']",['Peer Advice'],0,4

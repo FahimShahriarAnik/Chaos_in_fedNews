@@ -1,0 +1,30 @@
+1a - Fear/Anxiety: Author expresses general physiological anxiety, coming from fear of being laid off or impending layoff or just mass layoffs situation; “can’t sleep”, panic before meetings. Look for emotional tone. || Examples: I can't sleep before these all-hands. | Panic is setting in—I’m sure I’m next on the list.
+1b - Anger/Blame: Author blames organization, investors or politics for layoffs; venting or ranting tone. || Examples: Management doesn’t care about us at all. | The C-suite only cares about their bonuses.
+1c - Shock/Disbelief: Author expresses surprise or disbelief at sudden layoff news—‘didn’t see it coming.’ || Examples: I thought I was safe—then bam, they let me go overnight. | Can’t believe they cut us without warning.
+1d - Resilience/Hope: Author expresses optimism or encouragement despite hardship; ‘we’ll bounce back.’ 'don’t give up'  || Examples:  Job market is bouncing back. | Stay positive, believe in yourself.
+1e - Frustration/Disappointment: Author shows frustration or disappointment with how layoffs were handled or outcomes. Wants to vent. || Examples:  Got rejected after three months and multiple rounds of interview. Extremely frustrated. | venting to get it out of my mind.
+2a - Financial Insecurity: Author discusses budget cuts, severance math, unemployment filing or bankruptcy worries. || Examples: My savings won’t last past next month. | I need to cut my expenses to make ends meet.
+2b - Income Strategies: Author describes side gigs, freelancing, temp work or gig-economy efforts to earn money. || Examples: Planning to apply for unemployment benefits. | Picked up a side gig to bridge the gap. | How are you all making money while unemployed/ after being laid off?
+2c - Health & Well-being: Author mentions physical or mental health struggles linked to the layoff stress. Focus on health outcomes, not just general stress. || Examples: Going back to office has been a nightmare for my physical health. | My anxiety has gotten so much worse since losing my job.
+2d - Family Struggle: Author describes how layoff impacts family responsibilities or dependents. || Examples: With a newborn at home, I’m terrified I won’t provide. | My spouse also just lost their job—bills are stacking up.
+3a - Job-search Friction: Author complains about extra competitive market. Being ghosted, rejected or automatically filtered out. || Examples: Tired of getting rejected by ATS filters. | Recruiters stop responding after one quick call.
+3b - Anticipation & Job Insecurity: Author expresses noticing signs of looming cuts, PIP warnings or ominous HR meetings. Can be mass or individual layoff. Fear can be present here as well, but it is more about the anticipation of being laid off. || Examples: HR scheduled a ‘check-in’—I know that’s code for a pink slip. I was put on focus before this. | Being laid off | We are they will cut our team in half next month
+3c - Career change: Author considers pivoting to new industry, further education or different role. || Examples: Seriously considering a career change. | Might transition into project management instead of dev.
+4a - Legal mobilization: Author calls for WARN notices, class-action or legal petitions. But it needs to be something collective, not individual.  || Examples: Check out the WARN notice template for mass layoffs. | Considering starting a class-action lawsuit against the company.
+4b - Structural Critique: Author criticizes offshoring, AI replacement or broader profit-driven motives. || Examples: They shipped our jobs to India. | AI is taking over and execs don’t care about people.
+4c - Peer Advice: Author offers resume tips, interview strategies or answers peers’ questions. Not just generic advice, advice tailored to someone’s specific situation. || Examples: Use bullet points to highlight achievements. | Customize your cover letter for each role.
+4d - Resource-sharing: Author shares links to job guides, community surveys or layoff-tracker tools. Not specific to one person, but general resources that can help the community. || Examples: Here’s a spreadsheet of open remote roles. | Use this layoff tracker site to monitor openings.
+
+5a - Solidarity & Story-sharing: Author expresses solidarity, welcomes others to share stories or vent together. || Examples: Welcome to the club—we’ve all been there. | One of you now.
+
+5b - Stigma & Social Reactions: Author describes humiliation, mocking or awkward social interactions post-layoff. || Examples: People now treat me like I’m lazy. | Friends keep joking that I have nothing better to do.
+
+5c - Industry-specific Culture: Author references norms or vulnerabilities unique to their industry. || Examples: In Silicon Valley, hopping startups is expected. | Oil-field layoffs hit seasonal workers hardest.
+
+6a - Discussing Severance: Author describes or compares severance package details. || Examples: I was offered three months’ severance—fair deal? | They only gave me two weeks—any recourse?
+
+6b - Next Offer in hand: Author mentions having a new job offer or pending start date. || Examples: I’ve already got another offer starting next month. | My new employer wants me to start ASAP.
+
+6c - Seeking legal advice: Author asks for legal counsel or rights regarding the layoff. Individual legal advice, not collective action. || Examples: Anyone knows a good laywer, who knows legal implications of this? | Is it legal to record my HR call? | Am I commiting fraud?
+
+6d - Blaming the outgroup: Author blames external groups—competitors, immigrants, offshoring entities. || Examples: Those visa holders ruined our culture. They are taking away all the jobs. | Corporate elites only care about profits.
