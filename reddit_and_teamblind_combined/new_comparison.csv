@@ -1,0 +1,101 @@
+post_id,codes_by_AI,codes_by_researcher,agreement,disagreement
+1,['Financial Insecurity'],['Financial Insecurity'],1,0
+2,"['Anticipation & Job Insecurity', 'Financial Insecurity', 'Family Struggle']","['Income Strategies', 'Anticipation & Job Insecurity', 'Family Struggle']",2,1
+3,"['Discussing Severance', 'Seeking legal advice']","['Anticipation & Job Insecurity', 'Discussing Severance', 'Seeking legal advice']",2,1
+4,['Income Strategies'],['Income Strategies'],1,0
+5,['None'],['None'],1,0
+6,"['Anticipation & Job Insecurity', 'Health & Well-being', 'Financial Insecurity', 'Income Strategies']","['Anticipation & Job Insecurity', 'Health & Well-being', 'Income Strategies']",3,0
+7,"['Anticipation & Job Insecurity', 'Next Offer in hand']","['Anticipation & Job Insecurity', 'Next Offer in hand']",2,0
+8,['Resource-sharing'],['Resource-sharing'],1,0
+9,"['Anticipation & Job Insecurity', 'Resilience/Hope']",['Anticipation & Job Insecurity'],1,0
+10,['Structural Critique'],['Structural Critique'],1,0
+11,['Anger/Blame'],['Anger/Blame'],1,0
+12,['None'],['None'],1,0
+13,['Peer Advice'],['Peer Advice'],1,0
+14,"['Legal mobilization', 'Resource-sharing']",['Anticipation & Job Insecurity'],0,1
+15,['Anticipation & Job Insecurity'],['Anticipation & Job Insecurity'],1,0
+16,['Seeking legal advice'],"['Income Strategies', 'Seeking legal advice']",1,1
+17,['Shock/Disbelief'],['Shock/Disbelief'],1,0
+18,"['Shock/Disbelief', 'Next Offer in hand']","['Anticipation & Job Insecurity', 'Frustration/Disappointment', 'Health & Well-being', 'Next Offer in hand', 'Job-search Friction']",1,4
+19,"['Discussing Severance', 'Legal mobilization']",['Discussing Severance'],1,0
+20,"['Structural Critique', 'Blaming the outgroup']","['Structural Critique', 'Blaming the outgroup', 'Job-search Friction']",2,1
+21,"['Job-search Friction', 'Frustration/Disappointment']","['Job-search Friction', 'Frustration/Disappointment']",2,0
+22,['None'],['None'],1,0
+23,['None'],['None'],1,0
+24,['None'],['None'],1,0
+25,"['Stigma & Social Reactions', 'Financial Insecurity', 'Health & Well-being']","['Financial Insecurity', 'Health & Well-being']",2,0
+26,['None'],['Discussing Severance'],0,1
+27,['None'],['None'],1,0
+28,['Resilience/Hope'],['Resilience/Hope'],1,0
+29,['Job-search Friction'],['Peer Advice'],0,1
+30,"['Solidarity & Story-sharing', 'Frustration/Disappointment']",['Shock/Disbelief'],0,1
+31,['Solidarity & Story-sharing'],['Solidarity & Story-sharing'],1,0
+32,['None'],['None'],1,0
+33,['None'],['None'],1,0
+34,"['Frustration/Disappointment', 'Next Offer in hand']",['Next Offer in hand'],1,0
+35,['None'],['None'],1,0
+36,['Anticipation & Job Insecurity'],['Anticipation & Job Insecurity'],1,0
+37,['None'],['None'],1,0
+38,['Frustration/Disappointment'],['Frustration/Disappointment'],1,0
+39,"['Career change', 'Shock/Disbelief']","['Next Offer in hand', 'Career change']",1,1
+40,['Structural Critique'],['Fear/Anxiety'],0,1
+41,['Anticipation & Job Insecurity'],['Anticipation & Job Insecurity'],1,0
+42,['None'],['None'],1,0
+43,"['Career change', 'Financial Insecurity']","['Job-search Friction', 'Next Offer in hand', 'Career change']",1,2
+44,['None'],['Peer Advice'],0,1
+45,['None'],['None'],1,0
+46,['None'],['None'],1,0
+47,['None'],['None'],1,0
+48,"['Career change', 'Job-search Friction']",['Career change'],1,0
+49,['Frustration/Disappointment'],['Peer Advice'],0,1
+50,['Structural Critique'],['None'],0,1
+51,['Job-search Friction'],['Peer Advice'],0,1
+52,['Resource-sharing'],['None'],0,1
+53,"['Fear/Anxiety', 'Anticipation & Job Insecurity']",['Anticipation & Job Insecurity'],1,0
+54,['Discussing Severance'],['Discussing Severance'],1,0
+55,"['Fear/Anxiety', 'Career change']",['Career change'],1,0
+56,['None'],['None'],1,0
+57,['None'],['Resource-sharing'],0,1
+58,"['Fear/Anxiety', 'Structural Critique']",['Career change'],0,1
+59,['Job-search Friction'],"['Peer Advice', 'Shock/Disbelief']",0,2
+60,['Solidarity & Story-sharing'],['Resource-sharing'],0,1
+61,['Shock/Disbelief'],['Shock/Disbelief'],1,0
+62,['Job-search Friction'],['Job-search Friction'],1,0
+63,['None'],['Peer Advice'],0,1
+64,"['Job-search Friction', 'Career change']",['Career change'],1,0
+65,['None'],['None'],1,0
+66,['Fear/Anxiety'],['Resource-sharing'],0,1
+67,['None'],['None'],1,0
+68,['Frustration/Disappointment'],['Anticipation & Job Insecurity'],0,1
+69,['None'],['Peer Advice'],0,1
+70,['None'],['None'],1,0
+71,['Shock/Disbelief'],"['Health & Well-being', 'Family Struggle']",0,2
+72,['Legal mobilization'],['Structural Critique'],0,1
+73,['None'],['None'],1,0
+74,['None'],['None'],1,0
+75,['None'],['Peer Advice'],0,1
+76,"['Shock/Disbelief', 'Frustration/Disappointment']",['None'],0,1
+77,"['Resilience/Hope', 'Health & Well-being']",['Resilience/Hope'],1,0
+78,['None'],['None'],1,0
+79,"['Financial Insecurity', 'Frustration/Disappointment']","['Anticipation & Job Insecurity', 'Fear/Anxiety']",0,2
+80,['Structural Critique'],['None'],0,1
+81,"['Job-search Friction', 'Frustration/Disappointment']",['Frustration/Disappointment'],1,0
+82,['None'],['Anticipation & Job Insecurity'],0,1
+83,['None'],['None'],1,0
+84,['Frustration/Disappointment'],['Next Offer in hand'],0,1
+85,['None'],['None'],1,0
+86,['Structural Critique'],['None'],0,1
+87,"['Shock/Disbelief', 'Frustration/Disappointment']",['None'],0,1
+88,['Anticipation & Job Insecurity'],"['Anticipation & Job Insecurity', 'Family Struggle']",1,1
+89,['Next Offer in hand'],['Next Offer in hand'],1,0
+90,"['Financial Insecurity', 'Fear/Anxiety']",['None'],0,1
+91,['None'],['Structural Critique'],0,1
+92,['Frustration/Disappointment'],['Frustration/Disappointment'],1,0
+93,['Frustration/Disappointment'],['Peer Advice'],0,1
+94,"['Shock/Disbelief', 'Frustration/Disappointment']",['None'],0,1
+95,['Fear/Anxiety'],['Anticipation & Job Insecurity'],0,1
+96,['None'],['None'],1,0
+97,"['Shock/Disbelief', 'Frustration/Disappointment', 'Family Struggle']","['Discussing Severance', 'Health & Well-being']",0,2
+98,['None'],['Frustration/Disappointment'],0,1
+99,['None'],['None'],1,0
+100,"['Job-search Friction', 'Financial Insecurity']",['Peer Advice'],0,1

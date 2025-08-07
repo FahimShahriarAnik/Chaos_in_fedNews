@@ -1,0 +1,31 @@
+post_id,codes_by_AI,codes_by_researcher,agreement,disagreement
+1,"['Resilience/Hope', 'Career change', 'Solidarity & Story-sharing']","['Career change', 'Resilience/Hope', 'Solidarity & Story-sharing']",3,0
+2,['Shock/Disbelief'],['Anticipation & Job Insecurity'],0,1
+3,['Peer Advice'],['Peer Advice'],1,0
+4,"['Resilience/Hope', 'Structural Critique']","['Resilience/Hope', 'Structural Critique']",2,0
+5,['None'],['None'],1,0
+6,['None'],['None'],1,0
+7,"['Family Struggle', 'Next Offer in hand', 'Resilience/Hope', 'Income Strategies']","['Family Struggle', 'Next Offer in hand', 'Resilience/Hope', 'Income Strategies']",4,0
+8,['Job-search Friction'],['Job-search Friction'],1,0
+9,['Seeking legal advice'],['Seeking legal advice'],1,0
+10,['None'],['None'],1,0
+11,['None'],['Blaming the outgroup'],0,1
+12,['None'],['Structural Critique'],0,1
+13,['Peer Advice'],['Peer Advice'],1,0
+14,['None'],['None'],1,0
+15,['None'],['None'],1,0
+16,"['Solidarity & Story-sharing', 'Health & Well-being']","['Solidarity & Story-sharing', 'Health & Well-being']",2,0
+17,['None'],['Job-search Friction'],0,1
+18,"['Shock/Disbelief', 'Frustration/Disappointment', 'Anger/Blame']","['Anticipation & Job Insecurity', 'Shock/Disbelief', 'Frustration/Disappointment', 'Anger/Blame']",3,1
+19,['None'],['None'],1,0
+20,['None'],['None'],1,0
+21,['Job-search Friction'],['Job-search Friction'],1,0
+22,['None'],['None'],1,0
+23,"['Income Strategies', 'Legal mobilization']","['Job-search Friction', 'Income Strategies', 'Legal mobilization']",2,1
+24,"['Anticipation & Job Insecurity', 'Legal mobilization']","['Anticipation & Job Insecurity', 'Legal mobilization']",2,0
+25,"['Shock/Disbelief', 'Frustration/Disappointment']","['Anticipation & Job Insecurity', 'Frustration/Disappointment', 'Shock/Disbelief']",2,1
+26,"['Anticipation & Job Insecurity', 'Anger/Blame', 'Resilience/Hope']","['Anticipation & Job Insecurity', 'Anger/Blame', 'Resilience/Hope']",3,0
+27,"['Shock/Disbelief', 'Frustration/Disappointment']",['Shock/Disbelief'],1,0
+28,['None'],['None'],1,0
+29,"['Anger/Blame', 'Blaming the outgroup']","['Anger/Blame', 'Blaming the outgroup', 'Resilience/Hope']",2,1
+30,"['Anticipation & Job Insecurity', 'Structural Critique']","['Acticipation & Job Insecurity', 'Structural Critique']",1,1
