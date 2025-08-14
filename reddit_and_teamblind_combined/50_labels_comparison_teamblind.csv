@@ -1,0 +1,51 @@
+post_id,codes_by_AI,themes_AI,codes_by_researcher,themes_researcher,agreement,disagreement
+1,[],[],[],[],0,0
+2,"['Immigration limbo', 'Job search']","['Post-layoff precarities', 'Individual survival strategy']","['Job search', 'Immigration limbo']",[],2,0
+3,['Resource-sharing'],['Collective resistance'],['Resource-sharing'],[],1,0
+4,"['News of mass layoff', 'Corporate euphemisms']","['Mass layoff Decisions', 'Weaponized system']","['News of mass layoff', 'Corporate euphemisms']",[],2,0
+5,"['News of mass layoff', 'Job search']","['Mass layoff Decisions', 'Individual survival strategy']","['Job search', 'News of mass layoff']",[],2,0
+6,[],[],['News of mass layoff'],[],0,1
+7,"['Job search', 'Immigration limbo']","['Individual survival strategy', 'Post-layoff precarities']","['Job search', 'Immigration limbo']",[],2,0
+8,['Immigration limbo'],['Post-layoff precarities'],['Immigration limbo'],[],1,0
+9,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+10,[],[],[],[],0,0
+11,"['Job search', 'Anticipation & job insecurity']","['Individual survival strategy', 'Career trajectory']","['Job search', 'Anticipation & job insecurity']",[],2,0
+12,[],[],[],[],0,0
+13,"['Immigration limbo', 'Job search']","['Post-layoff precarities', 'Individual survival strategy']","['Job search', 'Immigration limbo']",[],2,0
+14,['Job-search friction'],['Career trajectory'],"['Job-search friction', 'Frustration/Disappointment']",[],1,1
+15,[],[],[],[],0,0
+16,"['Immigration limbo', 'Anger/Blame']","['Post-layoff precarities', 'Emotional response']","['Immigration limbo', 'Anger/Blame']",[],2,0
+17,['Discussing severance'],['Individual survival strategy'],"['Discussing severance', 'Seeking legal advice']",[],1,1
+18,['Job search'],['Individual survival strategy'],['Job search'],[],1,0
+19,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+20,"['Professional identity collapse', 'Frustration/Disappointment']","['Post-layoff precarities', 'Emotional response']","['Fear/Anxiety', 'Professional identity collapse']",[],1,1
+21,['Resilience/Hope'],['Emotional response'],['Resilience/Hope'],[],1,0
+22,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+23,['Career change'],['Career trajectory'],['Career change'],[],1,0
+24,[],[],['Frustration/Disappointment'],[],0,1
+25,[],[],[],[],0,0
+26,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+27,['Job search'],['Individual survival strategy'],[],[],0,0
+28,"['Anticipation & job insecurity', 'Job search']","['Career trajectory', 'Individual survival strategy']","['Anticipation & job insecurity', 'Job search']",[],2,0
+29,[],[],[],[],0,0
+30,"['Anticipation & job insecurity', 'Job search', 'Frustration/Disappointment']","['Career trajectory', 'Individual survival strategy', 'Emotional response']","['Anticipation & job insecurity', 'Frustration/Disappointment', 'Job search']",[],3,0
+31,['Financial insecurity'],['Post-layoff precarities'],['Financial insecurity'],[],1,0
+32,"['Job search', 'Disability discrimination']","['Individual survival strategy', 'Weaponized system']",['Job search'],[],1,0
+33,['Resource-sharing'],['Collective resistance'],['Resource-sharing'],[],1,0
+34,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+35,['Job-search friction'],['Career trajectory'],['Job-search friction'],[],1,0
+36,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+37,['Job-search friction'],['Career trajectory'],"['Job-search friction', 'Resource-sharing']",[],1,1
+38,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+39,['Job search'],['Individual survival strategy'],['Resource-sharing'],[],0,1
+40,"['Discussing severance', 'Immigration limbo']","['Individual survival strategy', 'Post-layoff precarities']","['Immigration limbo', 'Discussing severance']",[],2,0
+41,['Anticipation & job insecurity'],['Career trajectory'],['Startup/Small Tech vulnerability'],[],0,1
+42,['Job search'],['Individual survival strategy'],['Job search'],[],1,0
+43,"['Job search', 'Family struggle']","['Individual survival strategy', 'Post-layoff precarities']","['News of mass layoff', 'Job search', 'Family struggle']",[],2,1
+44,['Career change'],['Career trajectory'],"['Career change', 'Upskilling']",[],1,1
+45,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
+46,['Anticipation & job insecurity'],['Career trajectory'],['Anticipation & job insecurity'],[],1,0
+47,"['News of mass layoff', 'Discussing severance']","['Mass layoff Decisions', 'Individual survival strategy']",['Discussing severance'],[],1,0
+48,[],[],[],[],0,0
+49,['Seeking legal advice'],['Individual survival strategy'],['Seeking legal advice'],[],1,0
+50,['News of mass layoff'],['Mass layoff Decisions'],['News of mass layoff'],[],1,0
