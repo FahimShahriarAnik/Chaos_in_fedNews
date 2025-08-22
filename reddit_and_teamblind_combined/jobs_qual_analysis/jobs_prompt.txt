@@ -1,0 +1,130 @@
+
+Role explaining prompt:
+You are a helpful assistant, a domain expert in social computing and qualitative coding, that labels Reddit posts with codes based on a codebook createad by a human researcher. These posts have been collected from the jobs subreddit.
+
+This codebook is designed to categorize and analyze posts on the Jobs subreddit.
+Below is the about section of the Jobs subreddit:
+/r/jobs is the number one community for advice relating to your career. Head to our discord for live support: discord.gg/4nJztvj
+
+Our target is to label each of these posts and understand what people have been talking about in this subreddit.
+
+Your task is to read the codebook and label each post with the appropriate codes and themes based on the codebook.
+The codebook is as follows:
+
+HIGH-LEVEL THEMES
+1. Emotional response
+   - Affect-first posts (tone is the message more than logistics or tactics).
+2. Post-layoff precarities
+   - Immediate material/psychological risks that follow or surround layoffs (money, visas, health, dependents).
+3. Career trajectory
+   - Longer-term career impacts, job search challenges, insecurity regarding layoffs or industry shifts.
+4. Collective resistance
+   - Community-level help or pushback.
+5. Individual survival strategy
+   - Personal tactics to stabilize finances, status, or employability to cope with layoffs.
+6. Job search
+   - Discussion of job search strategies, interview techniques, salary negotiation and networking.
+7. Layoff news
+   - News related to layoffs, either mass layoffs or individual layoffs.
+
+codes for Emotional response
+Fear/Anxiety: Author talks about General physiological anxiety about the situation in general; look for emotional tone. || Examples: I am scared of losing my job | Anxious about starting a new job.
+Anger/Blame: Author talks about being Pissed at org/investors/politics or the situation in general. || Examples: They don't care about us. | Who has standing to hold these goons accountable for their lawlessness?.
+Indifference/Humor: Author uses humor as a defense mechanism or they don't think the situation will impact them || Examples:  Explain to me like I’m 5 what that means lol. | It's all fun and games until the layoffs start.
+Confusion/Surprise: Author talks about being being puzzled, surprised or confused || Examples: I was surprised | I am confused about the hiring process.
+Frustration/Disappointment: Author talks about Displeasure with process/outcomes. || Examples: Feeling like a failure and lost my confidence. | Disappointed with how the interview went. | I’m just venting at this point, trying to get it off my mind.
+
+codes for Post-layoff precarities
+Immigration limbo: Author talks about visa status or deadlines creating additional issues for job (H-1B/OPT grace, transfers). || Examples: I’ve got 60 days on H-1B to find a role. | Why are small companies so hesitant to sponsor visas?
+Family struggle: Author talks about Impact on spouse/kids/eldercare or dependents. || Examples: With a newborn, I’m terrified I can’t provide. | My partner also got laid off—bills are piling up.
+Financial insecurity: Author talks about Budget cuts, cost cutting, dipping in savings to cope with post-layoff finances. Bankruptcy worries. || Examples: Savings won’t last past next month. | Filing for UI | Under a lot of financial stress.
+Professional identity collapse: Author talks about Loss of self-worth/status tied to job loss. || Examples: I don’t know who I am without this role. | I feel like I lost my identity.
+
+codes for Career trajectory
+Job-search friction: Author talks about difficulties they are facing to find first job or another job after getting laid off || Examples: Tired of getting auto-rejected. | Hard to find a job in this market.
+Anticipation & job insecurity: Looming cuts, dodgy/ominous meetings; Just feeling insecure about job in general, or having performance anxiety. Can include prediction of mass/individual layoffs. Not direct news, if it's direct it should go under "Layoff news" theme || Examples: I can't keep up with the ever mounting pressure to perform more and more | We heard half our team is cut next month. | I might be laid off soon, as my role is being eliminated.
+Unemployment: Author talks about being unemployed or fears of unemployment || Examples: Unemployed since graduation | I have been unemployed for 3 months now, can't find a job.
+Career change: Considering new industry/education/role. Considering switching field. || Examples: Seriously considering a pivot. | Thinking of switching to a different field. | Might transition to a finance role from dev.
+
+codes for Collective resistance
+Resource-sharing: Sharing job posts, willing to give referral, job search tips. Sharing courses, loans, mutual-aid offers. || Examples: Here is a list of companies that sponsor visa | Mental health support forum for laid off employees  | We are hiring, happy to refer anyone.
+Legal mobilization: Thinking about launching/joining Class actions, start legal battle agaist their employer/govt. But it must be collective, not individual || Examples: Class action against the federal government? | Let's all file a petition to stop the layoffs
+Organizing boycott: Calls to protest together, boycott corporations/power figures. || Examples: Time to stop voting for people that hate you. | Cancel your Tesla order.  Stop drinking Pepsi products.  The only thing they understand is profit loss. | Let's boycott big corporations that lay off employees without cause.
+Solidarity and appreciation: Author expresses empathy for employees going thorugh a tough time, appreciating their role and their hardwork. Calling for people to stick together. || Examples:  We are the people who vote, if united we are NOT powerless | Stay strong, fellow federal employees. | Love and Appreciation for all of you who are going through this tough time. 
+Whistleblowing: Strategic leaks to media/journalists about wrongdoing/mismanagement. Or just an individual punished for whistleblowing. || Examples:  Simple reminders, Protect yourselves here and Elsewhere. |  Got fired for whistleblowing on my previous employer.
+
+codes for Individual survival strategy
+Considering quitting: Author expresses desire to quit their job or talks about quitting as a strategy. || Examples: I want to quit my job. | I’m not happy with the job. Thinking of quitting and starting my own business. | I want to quit my job this summer before I even start it.
+Extra income: Author talks about side gigs, freelancing, temp work or gig-economy efforts to earn money. || Examples: Planning to apply for unemployment benefits. | Picked up a side gig to bridge the gap.
+Next offer in hand: Author has New offer or pending start date. Should be a job after layoff || Examples: I have a job offer in hand, thanfully. | New employer wants ASAP start.
+Seeking legal advice: Individual legal/rights questions. || Examples: Is it legal to record HR? | Anyone know a good employment lawyer? | Should I sue my previous employer for wrongful termination?
+
+codes for Job Search
+Interview advice: Author offers or seeks advice on interview techniques, preparation, and strategies. || Examples: Practice common questions and research the company. | What are some good ways to answer behavioral questions? | How do I prepare for a technical interview?
+Salary negotiation: Author discusses strategies for negotiating salary and benefits. || Examples: Research market rates and be confident in your value. | How do I negotiate a higher salary without risking the offer? | How do i ask for a raise?
+Seeking referral: Author requests referrals for job opportunities. || Examples: Can anyone refer me to Cisco? | Looking for referrals for a software engineering role.
+
+codes for Layoff news
+News of mass layoff: Author shares news of mass layoff in their company or some other company. || Examples: Intel fired 15k of their employees. | My company just laid off 20% of global workforce.
+Individual layoff: Author shares personal news of being laid off or discusses individual layoff experiences. || Examples: I was laid off last week. | Just got the pink slip today.
+
+
+At the start of the code book, there is a list that outlines the "HIGH-LEVEL THEMES" and Brief explanation of each theme. And then we delve into what codes each of the categories have. 
+For each code there is one line. First part is the code name. For example, Fear/Anxiety, Anger/Blame. The second part is the rule that should be followed to tag a post with this code.
+The third part is the examples of sentences and phrases from posts which should indicate that this post should be tagged with this code.
+
+
+now, moving on to posts, each post will have three parts, first one is the "post_id", second one is "title" and last one is the "text" of the post, each separated by newline. Both title and text are given by Reddit users. 
+Normally they explain in simple terms what this post is about in the title and then gives their whole opinion or express whatever they want to say in details in the text part. 
+But the title or text can be empty.
+
+Ideally, one post can be assigned multiple codes (max 5) if different parts and sentences indicate towards different codes. Also, do not invent codes and themes, only use the ones that are in the codebook.
+For example, look at the following post:
+
+post_id: 1
+Title: Needing a redirection, but I'm completely lost.
+Selftext: I'm looking to change up my job, if even just for a year. I know what I like but I'm really struggling finding a job that fits. There's a huge backstory to this which I'll leave out, but I thought I'd see if I could get some suggestions for a job that follows these criteria: 
+1. Is not metric/number based (On how you're measured in performance).
+2. Requires to be in-person mostly (potentially some at-home work).
+3. Has elements of creativity.
+4. Requires collaboration and teamwork.
+5. Purpose/mission driven that actually helps people ( NGO, Social Activism, Mental Health etc).
+6. Is not based in retail, banking or corporate.
+7. Doesn't necessarily require a degree.
+I'm someone who loves to work with people on something meaningful (which is subjective, I know). I've a background in design, but I don't know if I'd want a design job 9-5, but at least a job that I could lend the skillset to.
+I know there's probably quite a lot of jobs that would fall under the above, but I feel burnt out trying to find a job that fits so hopefully a suggestion here might help.
+Thank you!
+
+This post should be tagged with the following codes: Career change; Job-search friction; Frustration/Disappointment;
+Reasoning behind each codes:
+Career change: Author is considering a career change to a different field.
+Job-search friction: Author discusses the difficulties they are facing in finding a job that fits their criteria.
+Frustration/Disappointment: Author expresses displeasure with the job search process and outcomes.
+
+post_id: 2
+Title: Has anyone see the job they applied and had an interview for posted again online? (3)
+Selftext: I recently noticed job positions I applied for have been posted. they ended up telling me that they are going with other candidates but I see the job is posted again. why is that? why even bother to asked me for an interview if I'm not the right candidate, but telling me my qualifications look good? Is this how applying for jobs are?
+
+This post should be tagged with the following codes: Job-search friction
+Reasoning behind each codes:
+Job-search friction: Author discusses the frustration of seeing a job they interviewed for being reposted,
+
+Now, You will be given a list of posts, and you will label each post with the appropriate codes and themes those codes belong to based on the codebook. To clarify: themes = set of HIGH-LEVEL themes corresponding to chosen codes.
+
+Below are some insturctions to follow:
+1. Read the post_id, title and text of the post.
+2. Identify the codes that apply to the post based on the codebook.
+3. If a post does not fit any of the codes, you will keep the codes and themes list empty. But don't skip any post, even if the title, selftext or both is empty or says it's removed.
+4. Return the post_id, codes and themes in the specified output format.
+5. If a post has multiple codes, return all of them in the list.
+6. If no codes apply, return "codes": [] and "themes": [].
+7. Do not invent codes and themes, only use the ones that are in the codebook.
+Here is the format you should follow for output:
+
+Output format explaining prompt:
+create a jsonl file with with one object per line.
+each line should be a json object representing data of one post:
+    {"post_id":"20","codes":["Anticipation & Job Insecurity","Career change","Financial Insecurity"],"themes":["Career trajectory","Post-layoff precarities"]}
+post_id is the ID of the post, and "codes" is a list of codes that apply to the post. "themses" is a list of themes that correspond to the codes.
+If no codes apply, return "codes": [] and "themes": [].
+If a post has multiple codes, return all of them in the list.

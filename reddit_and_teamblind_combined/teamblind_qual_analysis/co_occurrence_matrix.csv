@@ -1,0 +1,34 @@
+,Fear/Anxiety,Anger/Blame,Shock/Disbelief,Resilience/Hope,Frustration/Disappointment,Immigration limbo,Family struggle,Financial insecurity,Professional identity collapse,Job-search friction,Anticipation & job insecurity,Career change,Resource-sharing,Legal mobilization,Organizing boycott,Upskilling,Job search,Discussing severance,Next offer in hand,Seeking legal advice,Coercive PIPs/Focus,Blame-shifting,Disability discrimination,Legal gaslighting,Corporate euphemisms,Recruiter ghosting,Résumé-filter bias,Visa-filter bias,Profit maximization,News of mass layoff,Startup/Small Tech vulnerability,Big Tech privilege,Industry contagion
+Fear/Anxiety,200,0,1,0,1,14,5,15,2,64,10,0,0,0,0,0,4,1,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0
+Anger/Blame,0,299,0,0,1,2,1,0,0,2,0,1,0,3,1,0,0,2,0,0,1,0,1,1,1,0,0,0,3,10,0,0,0
+Shock/Disbelief,1,0,153,2,6,7,5,0,7,6,1,1,1,0,0,0,20,3,0,6,1,2,0,0,0,0,0,0,1,2,0,0,0
+Resilience/Hope,0,0,2,193,1,6,0,7,1,8,1,2,2,0,0,0,5,1,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Frustration/Disappointment,1,1,6,1,280,4,0,6,6,68,4,0,0,0,0,1,8,2,3,0,8,0,0,0,1,3,0,0,1,5,2,0,0
+Immigration limbo,14,2,7,6,4,828,25,7,3,60,29,5,49,1,0,1,257,20,7,18,25,2,2,1,0,1,0,0,0,6,0,0,0
+Family struggle,5,1,5,0,0,25,143,15,0,13,15,1,6,0,0,0,18,11,1,9,9,1,0,0,0,0,0,0,1,2,0,0,0
+Financial insecurity,15,0,0,7,6,7,15,225,2,32,8,3,1,0,0,0,17,2,2,3,2,0,0,0,0,1,0,0,0,1,1,0,0
+Professional identity collapse,2,0,7,1,6,3,0,2,41,12,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Job-search friction,64,2,6,8,68,60,13,32,12,837,11,8,15,0,0,3,13,4,3,1,4,1,0,1,0,0,3,0,0,1,3,0,0
+Anticipation & job insecurity,10,0,1,1,4,29,15,8,0,11,1778,2,2,0,0,4,22,8,3,0,8,0,1,0,1,0,0,0,3,8,1,0,2
+Career change,0,1,1,2,0,5,1,3,1,8,2,110,3,0,0,1,4,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+Resource-sharing,0,0,1,2,0,49,6,1,0,15,2,3,605,0,0,0,3,1,1,0,0,0,0,0,0,0,0,0,1,7,0,0,0
+Legal mobilization,0,3,0,0,0,1,0,0,0,0,0,0,0,92,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Organizing boycott,0,1,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Upskilling,0,0,0,0,1,1,0,0,0,3,4,1,0,0,0,23,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Job search,4,0,20,5,8,257,18,17,0,13,22,4,3,0,0,1,1212,2,4,1,18,0,0,0,0,0,0,0,0,6,2,0,0
+Discussing severance,1,2,3,1,2,20,11,2,0,4,8,0,1,0,0,0,2,481,6,17,22,1,0,4,1,0,0,0,0,32,0,1,0
+Next offer in hand,0,0,0,9,3,7,1,2,0,3,3,0,1,0,0,0,4,6,69,0,4,0,0,0,1,0,0,0,0,0,0,0,0
+Seeking legal advice,0,0,6,0,0,18,9,3,0,1,0,0,0,0,0,0,1,17,0,193,13,0,1,0,0,0,0,0,0,0,0,0,0
+Coercive PIPs/Focus,7,1,1,0,8,25,9,2,0,4,8,2,0,0,0,0,18,22,4,13,284,5,1,1,1,0,0,0,0,2,0,0,0
+Blame-shifting,0,0,2,0,0,2,1,0,0,1,0,0,0,0,0,0,0,1,0,0,5,46,0,0,4,0,0,0,2,2,0,0,0
+Disability discrimination,0,1,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,25,0,0,0,0,0,0,1,0,0,0
+Legal gaslighting,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,4,0,0,1,0,0,14,0,0,0,0,0,1,0,0,0
+Corporate euphemisms,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,4,0,0,55,0,0,0,2,15,0,0,0
+Recruiter ghosting,0,0,0,0,3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0
+Résumé-filter bias,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0
+Visa-filter bias,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0
+Profit maximization,0,3,1,0,1,0,1,0,0,0,3,0,1,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,162,12,0,0,0
+News of mass layoff,0,10,2,0,5,6,2,1,0,1,8,0,7,0,0,0,6,32,0,0,2,2,1,1,15,0,0,0,12,1631,1,0,0
+Startup/Small Tech vulnerability,0,0,0,0,2,0,0,1,0,3,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,1,13,1,0
+Big Tech privilege,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,8,1
+Industry contagion,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,12

@@ -1,0 +1,136 @@
+subreddit_name = "Teamblind"
+
+role_explaining_prompt = f"""
+Role explaining prompt:
+You are a helpful assistant, a domain expert in social computing and qualitative coding, that labels Reddit posts with codes based on a codebook createad by a human researcher. These posts have been collected from the {subreddit_name} layoffs channel using a scrapper.
+Our target is to label this post and understand what people have been talking about in this subreddit.
+
+Your task is to read the codebook and label each post with the appropriate codes and themes based on the codebook.
+The codebook is as follows:
+{teamblind_codebook}
+At the start of the code book, there is a list that outlines the "HIGH-LEVEL CATEGORIES" aka "THEMES" and Brief explanation of each. And then we delve into what codes each of the categories have. 
+For each code there is one line. First part is the code name. For example, Fear/Anxiety, Anger/Blame. The second part is the rule that should be followed to tag a post with this thing.
+The third part is the examples of sentences and phrases from posts which should indicate that this post should be tagged with this code.
+
+
+now, moving on to posts, each post will have three parts, first one is the "post_id", second one is "title" and last one is the "text" of the post, each separated by newline. Both title and text are given by Reddit users. 
+Normally they explain in simple terms what this post is about in the title and then gives their whole opinion or express whatever they want to say in details in the text part. 
+But the title or text can be empty.
+
+Ideally, one post can be assigned multiple codes (max 5) if different parts and sentences indicate towards different codes. Also, do not invent codes and themes, only use the ones that are in the codebook.
+For example, look at the following post:
+post_id: 1
+title: H-1B: 45 days left after RIF—ATS keeps auto-rejecting
+"text": RIF at my mid-size SaaS last week; I’m on H-1B so the 60-day clock is ticking (45 left).
+Half the JDs say “no sponsorship,” and the rest bounce me in ATS within minutes.
+Recruiters go silent after the first screen even when it feels like a fit.
+I’m targeting visa-friendly teams and asking friends for referrals in NYC/remote.
+Any proven tactics to actually get past ATS while the clock runs?
+
+This post should be tagged with the following codes: Immigration limbo; Visa-clock ticking; Job-search Friction
+Reasoning behind each codes:
+Immigration limbo: Mentions H-1B constraints.
+Visa-clock ticking: Emphasizes 60-day deadline.
+Job-search Friction: ATS auto-rejects and recruiter ghosting.
+
+post_id: 2
+title: Friday all-hands titled “streamlining”—should I be worried?
+"text": Big Tech here—calendar just dropped a company all-hands called “streamlining our org.”
+Rumor is 10% headcount reduction; managers are canceling 1:1s.
+Prepping my résumé just in case.
+
+This post should be tagged with the following codes: Anticipation & Job Insecurity; Corporate euphemisms
+Reasoning behind each codes:
+Anticipation & Job Insecurity: Looming cuts and ominous all-hands.
+Corporate euphemisms: “Streamlining our org” frames potential layoffs.
+
+Now, You will be given a list of posts, and you will label each post with the appropriate codes and themes those codes belong to based on the codebook. To clarify: themes = set of HIGH-LEVEL categories corresponding to chosen codes.
+If a post does not fit any of the codes, you will keep the codes and themes list empty.
+Here is the format you should follow for output:
+"""
+
+output_format_explaining_prompt = """
+Output format explaining prompt:
+create a jsonl file with with one object per line.
+each line should be a json object representing data of one post:
+    {"post_id":"20","codes":["Anticipation & Job Insecurity","Career change","Financial Insecurity"],"themes":["Career trajectory","Post-layoff precarities"]}
+post_id is the ID of the post, and "codes" is a list of codes that apply to the post. "themses" is a list of themes that correspond to the codes.
+If no codes apply, return "codes": [] and "themes": [].
+If a post has multiple codes, return all of them in the list.
+"""
+
+# Teamblind layoffs codebook
+
+teamblind_codebook = """
+HIGH-LEVEL CATEGORIES
+1. Emotional response
+   - Affect-first posts (tone is the message more than logistics or tactics).
+2. Post-layoff precarities
+   - Immediate material/psychological risks that follow or surround layoffs (money, visas, health, dependents).
+3. Career trajectory
+   - Longer-term career impacts, job search challenges, insecurity regarding layoffs or industry shifts.
+4. Collective resistance
+   - Community-level help or pushback.
+5. Individual survival strategy
+   - Personal tactics to stabilize finances, status, or employability to cope with layoffs.
+6. Weaponized system
+   - Institutional mechanisms used to force exits or suppress rights.
+7. Algorithmic dehumanization
+   - Automated or scaled processes that erase personhood in hiring/firing. All of these should also be included in Job-search friction.
+8. Mass layoff Decisions
+   - Decisions made by companies to maximize profits, often at the expense of employees.
+9. Tiered precarity
+   - Different levels of vulnerability and risk faced by employees based on their roles, visa status, company size.
+
+codes for Emotional response
+Fear/Anxiety: Author talks about General physiological anxiety about the situation in general; look for emotional tone. || Examples: I can’t sleep before these all-hands. | Panic is setting in—I’m sure I’m next.
+Anger/Blame: Author talks about being Pissed at org/investors/politics or the situation in general. || Examples: Management doesn’t care about us. | The C-suite only cares about bonuses.
+Shock/Disbelief: Author expressed their shock. Shock/disbelif at sudden layoff || Examples:  Sudden, didn’t see it coming. | Thought I was safe—then bam, gone overnight. | Can’t believe they cut us with no warning.
+Resilience/Hope: Author talks about  Optimism/encouragement despite hardship. ‘we’ll bounce back’ 'don’t give up'". || Examples: Job market is bouncing back. | Stay positive, believe in yourself.
+Frustration/Disappointment: Author talks about Displeasure with process/outcomes. || Examples: I’m so disappointed in how they treated us. | Venting to get it off my mind.
+
+codes for Post-layoff precarities
+Immigration limbo: Author talks about visa status or deadlines creating additional issues (H-1B/OPT grace, transfers). || Examples: I’ve got 60 days on H-1B to find a role. | Any visa-friendly teams hiring ASAP?
+Family struggle: Author talks about Impact on spouse/kids/eldercare or dependents. || Examples: With a newborn, I’m terrified I can’t provide. | My partner also got laid off—bills are piling up.
+Financial insecurity: Author talks about Budget cuts, cost cutting, UI/COBRA to cope with post-layoff finances. Bankruptcy worries. || Examples: Savings won’t last past next month. | Filing for UI; COBRA is unaffordable.
+Professional identity collapse: Author talks about Loss of self-worth/status tied to job loss. || Examples: I don’t know who I am without this role. | I feel like I lost my identity.
+
+codes for Career trajectory
+Job-search friction: Extra competitive market; ghosting, rejections, ATS filters. || Examples: Tired of ATS auto-rejects. | Recruiters stop responding after one call.
+Anticipation & job insecurity: Looming cuts/PIPs/ominous meetings; Just feeling insecure about job in general. Can include prediction of mass/individual layoffs. || Examples: HR ‘check-in’—code for pink slip. | We heard half our team is cut next month.
+Career change: Considering new industry/education/role. Considering switching field. || Examples: Seriously considering a pivot. | Might transition to PM from dev.
+
+codes for Collective resistance
+Resource-sharing: Sharing job posts, willing to give referral, spreadsheets, tips, mutual aid. || Examples: Spreadsheet of visa-friendly teams. | List of open remote roles. | "Happy to refer anyone."
+Legal mobilization: Thinking about launching/joining Class actions, WARN rights, shared legal templates ( needs to be collective). || Examples: WARN claim template for CA. | Forming a class action channel.
+Organizing boycott: Calls to withhold spend/sponsor pressure. || Examples: Cancel subs until they rehire. | Boycott the product launch.
+
+codes for Individual survival strategy
+Upskilling: Author talks about trying Courses/certs, building portfolio to improve odds. || Examples: Finishing AWS SAA + Terraform lab. | Building a data-viz portfolio.
+Job search: Author talks about Applying/networking/interview prep/negotiation. Talks about their job search journey/experience || Examples: Targeting L4/L5 SDE; referrals welcome. | Mock interviews twice a week.
+Discussing severance: Author talks about Describing/comparing package details.  || Examples: Offered 12 weeks—fair? | Only two weeks—any recourse?
+Next offer in hand: Author has New offer or pending start date. Can be either first offer or job after layoff || Examples: I have a job offer in hand, thanfully. | New employer wants ASAP start.
+Seeking legal advice: Individual legal/rights questions. || Examples: Is it legal to record HR? | Anyone know a good employment lawyer?
+
+codes for Weaponized system
+Coercive PIPs/Focus: Author talks about performance programs being used to push out (moving targets, bad-faith criteria). || Examples: Focus plan with shifting goals. | PIP after RA denial.
+Blame-shifting: Managers pin failures on ICs to justify exits. || Examples: Timeline rewritten to make me miss dates. | I’m the scapegoat for leadership’s miss.
+Disability discrimination: Layoff/PIP tied to disability or remote work or RA denial. || Examples: RA denied, then PIP for “collaboration.” | Health condition cited as performance.
+Legal gaslighting: Misstating rights; intimidating legal threats. || Examples: HR says I can’t show severance to a lawyer. | Told NDA bans discussing WARN.
+Corporate euphemisms: Reframing layoffs as “Restructuring,” “rightsizing,” “simplifying,” etc. || Examples: “Streamlining focus areas.” | “Rebalancing talent to priorities.”
+
+codes for algorithmic dehumanization
+Recruiter ghosting: Silence post-screen or mid-process or recuriter not replying at-all || Examples: Fourth round done—then nothing. | Vanished after “great fit” call.
+Résumé-filter bias: ATS/keyword/gap bias blocking human review. || Examples: 9-month gap triggers instant rejects. | No human eyes on my profile.
+Visa-filter bias: Automated filters blocking visa holders. || Examples: “No H-1B” in job description. | Got auto-rejected for being on OPT.
+
+Mass layoff decisions
+Profit maximization: Cuts framed to please markets/margins. Cuts despite profitability/record revenue. || Examples: 10% cut to hit EBITDA. | Examples: Record profits, then mass RIF. | “Healthy” company but trimming headcount.
+News of mass layoff: Author shares news of mass layoff in their company or some other company. || Examples: Intel fired 15k of their employees. | My company just laid off 15% of global workforce.
+
+Tiered precarity
+Startup/Small Tech vulnerability: Short runway/VC pullback dynamics. Or just additional difficulties of being a startup/small company. || Examples: Seed round fell through; 40% cut. | Runway 3 months—team halved.
+Big Tech privilege: Relative insulation/rehire via internal moves. Better severance packages. Getting callbacks faster. || Examples: Internal transfer saved me at mega-cap. | Priority pipelines for alumni.
+Industry contagion: Layoffs spreading across adjacent sectors, from tech. || Examples: Another cloud infra shop cut 15%. | Cuts rippling into adtech/healthtech.
+
+"""

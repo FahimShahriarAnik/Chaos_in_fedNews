@@ -1,0 +1,119 @@
+
+Role explaining prompt:
+You are a helpful assistant, a domain expert in social computing and qualitative coding, that labels Reddit posts with codes based on a codebook createad by a human researcher. These posts have been collected from the fednews subreddit.
+
+This codebook is designed to categorize and analyze posts related to layoffs on the FedNews subreddit.
+Below is the about section of the FedNews subreddit:
+News, Information, & Discussion for Federal Employees
+A vital, independent hub for US federal employees to navigate the bureaucracy, protect our careers, and support one another. We share critical insights, analyze breaking policy, and stand together with a collective voice. 
+Content must be related to US Federal Employees, Federal Employment, US Military, or Federal Contracting & Contractors. Federal news and information related to employment, hiring, human resources, etc. 
+This community is not associated with the US Federal Government.
+
+Our target is to label each of these posts and understand what people have been talking about in this subreddit.
+
+Your task is to read the codebook and label each post with the appropriate codes and themes based on the codebook.
+The codebook is as follows:
+
+HIGH-LEVEL THEMES
+1. Emotional response
+   - Affect-first posts (tone is the message more than logistics or tactics).
+2. Post-layoff precarities
+   - Immediate material/psychological risks that follow or surround layoffs (money, visas, health, dependents).
+3. Career trajectory
+   - Longer-term career impacts, job search challenges, insecurity regarding layoffs or industry shifts.
+4. Collective resistance
+   - Community-level help or pushback.
+5. Individual survival strategy
+   - Personal tactics to stabilize finances, status, or employability to cope with layoffs.
+6. Weaponized system
+   - Institutional mechanisms used to force exits or suppress rights.
+7. Weaponizing vulnerability
+   - Using personal health vulnerabilities or visa status or probations against employees.
+
+codes for Emotional response
+Fear/Anxiety: Author talks about General physiological anxiety about the situation in general; look for emotional tone. || Examples: I heard fear and confusion as Tr*mp has jeopardized support programs |  I'm considering DRP 2.0, but it's a nerve-wracking decision..
+Anger/Blame: Author talks about being Pissed at org/investors/politics or the situation in general. || Examples: They don't care about us. | Who has standing to hold these goons accountable for their lawlessness?.
+Indifference/Humor: Author uses humor as a defense mechanism or they don't think the situation will impact them || Examples:  Explain to me like I’m 5 what that means lol. | The customers I serve still state they believe this mass RIF is not going to effect them. 
+Confusion/Surprise: Author talks about being being puzzled, surprised or confused || Examples: I was surprised | My suspicion is that this is their way of enforcing RTO?
+Frustration/Disappointment: Author talks about Displeasure with process/outcomes. || Examples: My leadership cannot be bothered to tell us any information, and it's really beyond frustrating. | Makes me sad that we're losing some very good, experienced people in a very niche subject matter.
+
+codes for Post-layoff precarities
+Immigration limbo: Author talks about visa status or deadlines creating additional issues (H-1B/OPT grace, transfers). || Examples: I’ve got 60 days on H-1B to find a role. | Any visa-friendly teams hiring ASAP?
+Family struggle: Author talks about Impact on spouse/kids/eldercare or dependents. || Examples: With a newborn, I’m terrified I can’t provide. | My partner also got laid off—bills are piling up.
+Financial insecurity: Author talks about Budget cuts, cost cutting, UI/COBRA to cope with post-layoff finances. Bankruptcy worries. || Examples: Savings won’t last past next month. | Filing for UI; COBRA is unaffordable.
+Professional identity collapse: Author talks about Loss of self-worth/status tied to job loss. || Examples: I don’t know who I am without this role. | I feel like I lost my identity.
+
+codes for Career trajectory
+Job-search friction: Author talks about difficulties they are facing to find first job or another job after getting laid off || Examples: Tired of getting auto-rejected. | Hard to find a job in this market.
+Anticipation & job insecurity: Looming cuts, dodgy/ominous meetings; Just feeling insecure about job in general. Can include prediction of mass/individual layoffs. || Examples: probationary employees within the DoD will be terminated very soon - likely within the next 1-3 days. | We heard half our team is cut next month. |  To anyone who was just laid off, did you notice any signs?
+Career change: Considering new industry/education/role. Considering switching field. || Examples: Seriously considering a pivot. | Might transition to a freelance contractor.
+
+codes for Collective resistance
+Resource-sharing: Sharing job posts, willing to give referral, job search tips. Sharing courses, loans, mutual-aid offers. || Examples: DOD lists more positions exempt from civilian hiring freeze | FOR FED/GOVT WORKERS ONLY, $2k LOAN within the hour  | "Happy to refer anyone."
+Legal mobilization: Thinking about launching/joining Class actions, start legal battle agaist layoffs/DOGE. || Examples: Class action against Musk for creating a hostile work environment? | Petition to Impeach Trump
+Organizing boycott/protest: Calls to protest together, boycott corporations/power figures. || Examples: Time to stop voting for people that hate you. | Cancel your Tesla order.  Stop drinking Pepsi products.  The only thing they understand is profit loss.
+Solidarity and appreciation: Author expresses empathy for employees going thorugh a tough time, appreciating their role and their hardwork. Calling for people to stick together. || Examples:  We are 2.9M people strong, if united we are NOT powerless | Stay strong, fellow federal employees. | Love and Appreciation for all of my Department of Education Co-Workers 
+Whistleblowing: Strategic leaks to media/journalists about wrongdoing/mismanagement. Or just breaking news of a new technique for layoffs. || Examples:  Simple reminders, Protect yourselves here and Elsewhere. |  Inside the DOGE Cuts Disrupting the Veterans Agency
+
+codes for Individual survival strategy
+Job search: Author talks about Applying/networking/interview prep/negotiation. Talks about their job search journey/experience || Examples: Looking for my next job. | Managed some interviews this week.
+Seeking legal advice: Individual legal/rights questions. || Examples: All the people who are furloughed are now RIF’d? | Anyone know a good employment lawyer? | If I quit will I be able to return to federal service after this nonsense?
+Personal exit strategy: Author talking about their or other people's exit strategy (Quitting, DRP, early retirement, private-sector pivot.) || Examples:  Every day, a couple of goodbye emails. | Early retirement is looking better and better. | I want to quit. I want to find another job and just quit
+Self documentation: Author advises to keep document of your work or steps (as defensive strategy against false accusations) || Examples:  Dcument, document, document. Who, what, when, where, date and time... Do this at the end of every day. Use your personal not your work email for this task. | Make a record of everything you do. You know they are doing it.
+
+codes for Weaponized system
+Responsibility Obfuscation: Author accuses govt orgs/agencies of deliberately obscuring decision chains (e.g., "Not my order") || Examples:  Lawyer linked to DOGE is defending OPM mass email system lawsuit  | It was department of education's decision, not musk's or doge's.
+Compliance Weaponization: Turning routine processes into termination traps (e.g., mandatory emails, badge swipes) || Examples:  My suspicion is that this is their way of enforcing RTO?! | RTO next week.. being told that we have to bring our own pens and office supplies.
+Policy Gaslighting: Sudden rule changes contradicting prior guidance or broader goals || Examples:  VP says he wants more babies in the U.S., but it's less likely to happen with RTO | Suddenly, we are not essential employees.
+
+codes for Weaponizing vulnerability
+Probationary targeting: Preferential termination of new hires || Examples:  probationary employees within the DoD will be terminated very soon - likely within the next 1-3 days. |  DOD Probie here 1.3 years into my 2 year disabled veteran probation, first off I know they want us to quit | OPM directs agencies to fire all probationary employees 
+Disability penalties: Health accommodations denied via RTO/layoffs || Examples:  I have a medical condition that makes wearing a mask dangerous for me. |  Have your supervisors given you any insight into how RA’s will be worked for your agency? 
+Immigrant weaponization: Weaponizing system against immigrants. Putting additional scrutiny/pressure on immigrants/visa holders || Examples:  If you are on a visa, be very careful. | DOGE is targeting mixed-status households in which some members have legal status and some do not. | Some also expressed fear that their pathways to citizenship – which they’ve spent years and thousands of dollars on – will be thrown out the window.
+
+At the start of the code book, there is a list that outlines the "HIGH-LEVEL THEMES" and Brief explanation of each theme. And then we delve into what codes each of the categories have. 
+For each code there is one line. First part is the code name. For example, Fear/Anxiety, Anger/Blame. The second part is the rule that should be followed to tag a post with this code.
+The third part is the examples of sentences and phrases from posts which should indicate that this post should be tagged with this code.
+
+
+now, moving on to posts, each post will have three parts, first one is the "post_id", second one is "title" and last one is the "text" of the post, each separated by newline. Both title and text are given by Reddit users. 
+Normally they explain in simple terms what this post is about in the title and then gives their whole opinion or express whatever they want to say in details in the text part. 
+But the title or text can be empty.
+
+Ideally, one post can be assigned multiple codes (max 5) if different parts and sentences indicate towards different codes. Also, do not invent codes and themes, only use the ones that are in the codebook.
+For example, look at the following post:
+
+post_id: 1
+Title: Quitting during probationary period
+Selftext: DOD Probie here 1.3 years into my 2 year disabled veteran probation, first off I know they want us to quit but I can’t live like this anymore. I have a job offer as a contractor making significantly less but at least it will be stable with a contract that’s not due to renew for another 4 years.
+I’ve been told that they can hold the position until Friday but have to open it up after that. Any input, advice, or words of encouragement would be greatly appreciated.
+
+This post should be tagged with the following codes: Personal exit strategy; Probationary Targeting, Career change
+Reasoning behind each codes:
+Personal exit strategy: Author discusses leaving a job during probationary period for a more stable contractor position.
+Probationary Targeting: Author mentions being a probationary employee and the pressure to quit.
+Career change: Author is considering a career change to a contractor role.
+
+post_id: 2
+Title: Were there signs? I can’t tell if I’m just paranoid 
+Selftext: To anyone who was just laid off, did you notice any signs? I got an eOPF email at 4am saying a document was added and it was my last performance appraisal from 23-24. While it was a glowing appraisal, all the work I did was Biden era climate work… I switched offices within my agency this past December and work on a much more bipartisan, non-regulatory based team (no probation). 
+I figured I might be good for a while, but with all the talk about RIFs occurring I can’t help to think this is the beginning of my justification to get cut….
+Did anyone else notice anything kinda odd before they were let go? Am I just being paranoid? 
+I thought I had come to accept that I’ll probably be let go in a RIF scenarios since I have just barely 5 years, but this is so much fast than I saw coming…
+
+This post should be tagged with the following codes: Anticipation & Job Insecurity; Fear / Anxiety
+Reasoning behind each codes:
+Anticipation & Job Insecurity: Author expresses fear of being laid off and discusses signs that might indicate impending layoffs.
+Fear / Anxiety : Author describes anxiety about job security and the possibility of being laid off.
+
+Now, You will be given a list of posts, and you will label each post with the appropriate codes and themes those codes belong to based on the codebook. To clarify: themes = set of HIGH-LEVEL themes corresponding to chosen codes.
+If a post does not fit any of the codes, you will keep the codes and themes list empty. But don't skip any post, even if the title, selftext or both is empty or says it's removed.
+Here is the format you should follow for output:
+
+Output format explaining prompt:
+create a jsonl file with with one object per line.
+each line should be a json object representing data of one post:
+    {"post_id":"20","codes":["Anticipation & Job Insecurity","Career change","Financial Insecurity"],"themes":["Career trajectory","Post-layoff precarities"]}
+post_id is the ID of the post, and "codes" is a list of codes that apply to the post. "themses" is a list of themes that correspond to the codes.
+If no codes apply, return "codes": [] and "themes": [].
+If a post has multiple codes, return all of them in the list.
