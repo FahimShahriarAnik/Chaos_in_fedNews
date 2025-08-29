@@ -1,0 +1,81 @@
+
+sorted_teamblind_theme_dict = {
+    "Career trajectory": {
+        "count": 2704,
+        "codes": {
+            "Anticipation & job insecurity": 1778,
+            "Job-search friction": 837,
+            "Career change": 110,
+        },
+    },
+    "Individual survival strategy": {
+        "count": 1947,
+        "codes": {
+            "Job search": 1212,
+            "Discussing severance": 481,
+            "Seeking legal advice": 193,
+            "Next offer in hand": 69,
+            "Upskilling": 23,
+        },
+    },
+    "Mass layoff decisions": {
+        "count": 1781,
+        "codes": {
+            "News of mass layoff": 1631,
+            "Profit maximization": 162,
+        },
+    },
+    "Post-layoff precarities": {
+        "count": 1186,
+        "codes": {
+            "Immigration limbo": 828,
+            "Financial insecurity": 225,
+            "Family struggle": 143,
+            "Professional identity collapse": 41,
+        },
+    },
+    "Emotional response": {
+        "count": 1113,
+        "codes": {
+            "Anger/Blame": 299,
+            "Frustration/Disappointment": 280,
+            "Fear/Anxiety": 200,
+            "Resilience/Hope": 193,
+            "Shock/Disbelief": 153,
+        },
+    },
+    "Collective resistance": {
+        "count": 733,
+        "codes": {
+            "Resource-sharing": 605,
+            "Legal mobilization": 92,
+            "Organizing boycott": 25,
+        },
+    },
+    "Weaponized system": {
+        "count": 412,
+        "codes": {
+            "Coercive PIPs/Focus": 284,
+            "Corporate euphemisms": 55,
+            "Blame-shifting": 46,
+            "Disability discrimination": 25,
+            "Legal gaslighting": 14,
+        },
+    },
+    "Algorithmic dehumanization": {
+        "count": 52,
+        "codes": {
+            "Recruiter ghosting": 25,
+            "Visa-filter bias": 13,
+            "Résumé-filter bias": 9,
+        },
+    },
+    "Tiered precarity": {
+        "count": 36,
+        "codes": {
+            "Startup/Small Tech vulnerability": 13,
+            "Industry contagion": 12,
+            "Big Tech privilege": 8,
+        },
+    },
+}

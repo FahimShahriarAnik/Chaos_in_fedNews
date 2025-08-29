@@ -1,0 +1,58 @@
+
+sorted_layoffs_theme_dict = {
+    "Career trajectory": {
+        "count": 3552,
+        "codes": {
+            "Anticipation & Job Insecurity": 1838,
+            "Job-search Friction": 1344,
+            "Career change": 370,
+        },
+    },
+    "Emotional response": {
+        "count": 2659,
+        "codes": {
+            "Frustration/Disappointment": 1410,
+            "Shock/Disbelief": 475,
+            "Resilience/Hope": 443,
+            "Anger/Blame": 201,
+            "Fear/Anxiety": 130,
+        },
+    },
+    "Post-layoff precarities": {
+        "count": 1096,
+        "codes": {
+            "Financial Insecurity": 455,
+            "Health & Well-being": 346,
+            "Family Struggle": 163,
+            "Income Strategies": 131,
+            "Discrimination": 1,
+        },
+    },
+    "Individual survival strategy": {
+        "count": 1063,
+        "codes": {
+            "Discussing Severance": 435,
+            "Seeking legal advice": 343,
+            "Blaming the outgroup": 166,
+            "Next Offer in hand": 116,
+            "Survivor's Guilt": 3,
+        },
+    },
+    "Collective resistance": {
+        "count": 795,
+        "codes": {
+            "Structural Critique": 502,
+            "Resource-sharing": 151,
+            "Peer Advice": 111,
+            "Legal mobilization": 31,
+        },
+    },
+    "Community and identity": {
+        "count": 248,
+        "codes": {
+            "Solidarity & Story-sharing": 134,
+            "Stigma & Social Reactions": 92,
+            "Industry-specific Culture": 22,
+        },
+    },
+}

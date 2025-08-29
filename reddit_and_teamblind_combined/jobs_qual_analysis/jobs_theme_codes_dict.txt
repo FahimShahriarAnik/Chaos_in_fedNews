@@ -1,0 +1,64 @@
+sorted_jobs_theme_dict = {
+    "Career trajectory": {
+        "count": 3250,
+        "codes": {
+            "Job-search friction": 2586,
+            "Career change": 670,
+            "Anticipation & job insecurity": 155,  # 105 + 50 (case variant)
+            "Unemployment": 41,
+        },
+    },
+    "Emotional response": {
+        "count": 2576,
+        "codes": {
+            "Frustration/Disappointment": 2158,
+            "Fear/Anxiety": 288,
+            "Confusion/Surprise": 169,
+            "Anger/Blame": 13,
+            "Indifference/Humor": 13,
+        },
+    },
+    "Individual survival strategy": {
+        "count": 864,
+        "codes": {
+            "Considering quitting": 480,
+            "Next offer in hand": 156,
+            "Seeking legal advice": 154,
+            "Extra income": 82,
+        },
+    },
+    "Job Search": {
+        "count": 468,
+        "codes": {
+            "Salary negotiation": 274,
+            "Interview advice": 165,
+            "Seeking referral": 31,
+        },
+    },
+    "Post-layoff precarities": {
+        "count": 131,
+        "codes": {
+            "Financial insecurity": 112,
+            "Family struggle": 11,
+            "Immigration limbo": 10,
+            "Professional identity collapse": 0,
+        },
+    },
+    "Layoff news": {
+        "count": 74,
+        "codes": {
+            "Individual layoff": 70,
+            "News of mass layoff": 3,
+        },
+    },
+    "Collective resistance": {
+        "count": 59,
+        "codes": {
+            "Resource-sharing": 35,
+            "Whistleblowing": 11,
+            "Solidarity and appreciation": 9,
+            "Organizing boycott": 3,
+            "Legal mobilization": 1,
+        },
+    },
+}

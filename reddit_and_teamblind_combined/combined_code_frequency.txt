@@ -1,3 +1,5 @@
+for teamblind
+
 codes,count
 Anticipation & job insecurity,1778
 News of mass layoff,1631
@@ -32,3 +34,33 @@ Startup/Small Tech vulnerability,13
 Industry contagion,12
 Résumé-filter bias,9
 Big Tech privilege,8
+
+
+for layoffs
+
+codes,count
+Anticipation & Job Insecurity,1838
+Frustration/Disappointment,1410
+Job-search Friction,1344
+Structural Critique,502
+Shock/Disbelief,475
+Financial Insecurity,455
+Resilience/Hope,443
+Discussing Severance,435
+Career change,370
+Health & Well-being,346
+Seeking legal advice,343
+Anger/Blame,201
+Blaming the outgroup,166
+Family Struggle,163
+Resource-sharing,151
+Solidarity & Story-sharing,134
+Income Strategies,131
+Fear/Anxiety,130
+Next Offer in hand,116
+Peer Advice,111
+Stigma & Social Reactions,92
+Legal mobilization,31
+Industry-specific Culture,22
+Survivor's Guilt,3
+Discrimination,1

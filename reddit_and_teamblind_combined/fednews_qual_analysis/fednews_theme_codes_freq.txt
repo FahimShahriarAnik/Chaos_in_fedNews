@@ -1,0 +1,64 @@
+sorted_fednews_theme_dict = {
+    "Career trajectory": {
+        "count": 1405,
+        "codes": {
+            "Anticipation & job insecurity": 1329,
+            "Career change": 77,
+            "Job-search friction": 50,
+        },
+    },
+    "Emotional response": {
+        "count": 1399,
+        "codes": {
+            "Frustration/Disappointment": 533,
+            "Fear/Anxiety": 351,
+            "Anger/Blame": 270,
+            "Confusion/Surprise": 161,
+            "Indifference/Humor": 136,
+        },
+    },
+    "Collective resistance": {
+        "count": 1208,
+        "codes": {
+            "Solidarity and appreciation": 403,
+            "Whistleblowing": 330,
+            "Organizing boycott/protest": 218,
+            "Legal mobilization": 171,
+            "Resource-sharing": 111,
+        },
+    },
+    "Individual survival strategy": {
+        "count": 677,
+        "codes": {
+            "Seeking legal advice": 420,
+            "Personal exit strategy": 195,
+            "Self documentation": 50,
+            "Job search": 22,
+        },
+    },
+    "Weaponizing vulnerability": {
+        "count": 504,
+        "codes": {
+            "Probationary targeting": 425,
+            "Disability penalties": 75,
+            "Immigrant weaponization": 6,
+        },
+    },
+    "Weaponized system": {
+        "count": 443,
+        "codes": {
+            "Compliance Weaponization": 365,
+            "Policy Gaslighting": 56,
+            "Responsibility Obfuscation": 25,
+        },
+    },
+    "Post-layoff precarities": {
+        "count": 200,
+        "codes": {
+            "Financial insecurity": 116,
+            "Family struggle": 60,
+            "Professional identity collapse": 31,
+            "Immigration limbo": 1,
+        },
+    },
+}
