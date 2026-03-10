@@ -42,7 +42,8 @@ Professional identity collapse: Author talks about Loss of self-worth/status tie
 
 codes for Career trajectory
 Job-search friction: Author talks about difficulties they are facing to find first job or another job after getting laid off || Examples: Tired of getting auto-rejected. | Hard to find a job in this market.
-Anticipation & job insecurity: Looming cuts, dodgy/ominous meetings; Just feeling insecure about job in general, or having performance anxiety. Can include prediction of mass/individual layoffs. Not direct news, if it's direct it should go under "Layoff news" theme || Examples: I can't keep up with the ever mounting pressure to perform more and more | We heard half our team is cut next month. | I might be laid off soon, as my role is being eliminated.
+Anticipation & job insecurity: Looming cuts, dodgy/ominous meetings; Just feeling insecure about job in general, or having performance anxiety. Can include prediction of mass/individual layoffs. Not direct news, if it's direct it should go under "Layoff news" theme || Examples: I can't keep up with the ever mounting pressure to perform more and more 
+| We heard half our team is cut next month. | I might be laid off soon, as my role is being eliminated.
 Unemployment: Author talks about being unemployed or fears of unemployment || Examples: Unemployed since graduation | I have been unemployed for 3 months now, can't find a job.
 Career change: Considering new industry/education/role. Considering switching field. || Examples: Seriously considering a pivot. | Thinking of switching to a different field. | Might transition to a finance role from dev.
 

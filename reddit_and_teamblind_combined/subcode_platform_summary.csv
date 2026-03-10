@@ -1,0 +1,63 @@
+Code,teamblind_count,teamblind_pct,layoffs_count,layoffs_pct,fednews_count,fednews_pct,jobs_count,jobs_pct,overall_pct
+Anticipation & job insecurity,1778.0,19.2863,1838.0,16.3552,1329.0,13.29,155.0,1.55,12.606
+Job-search friction,837.0,9.0791,1344.0,11.9594,50.0,0.5,2586.0,25.86,11.9065
+Career change,110.0,1.1932,370.0,3.2924,77.0,0.77,670.0,6.7,3.0328
+Unemployment,NA,NA,NA,NA,NA,NA,41.0,0.41,0.1013
+Job search,1212.0,13.1468,NA,NA,22.0,0.22,NA,NA,3.0502
+Discussing severance,481.0,5.2175,435.0,3.8708,NA,NA,NA,NA,2.2641
+Seeking legal advice,193.0,2.0935,343.0,3.0521,420.0,4.2,154.0,1.54,2.7437
+Next offer in hand,69.0,0.7485,116.0,1.0322,NA,NA,156.0,1.56,0.8429
+Upskilling,23.0,0.2495,NA,NA,NA,NA,NA,NA,0.0569
+Blaming the outgroup,NA,NA,166.0,1.4771,NA,NA,NA,NA,0.4103
+Survivor's Guilt,NA,NA,3.0,0.0267,NA,NA,NA,NA,0.0074
+Personal exit strategy,NA,NA,NA,NA,195.0,1.95,NA,NA,0.482
+Self documentation,NA,NA,NA,NA,50.0,0.5,NA,NA,0.1236
+Considering quitting,NA,NA,NA,NA,NA,NA,480.0,4.8,1.1864
+Extra income,NA,NA,NA,NA,NA,NA,82.0,0.82,0.2027
+News of mass layoff,1631.0,17.6917,NA,NA,NA,NA,3.0,0.03,4.0389
+Profit maximization,162.0,1.7572,NA,NA,NA,NA,NA,NA,0.4004
+Immigration limbo,828.0,8.9815,NA,NA,1.0,0.01,10.0,0.1,2.0738
+Financial insecurity,225.0,2.4406,455.0,4.0488,116.0,1.16,112.0,1.12,2.2444
+Family struggle,143.0,1.5511,163.0,1.4504,60.0,0.6,11.0,0.11,0.9319
+Professional identity collapse,41.0,0.4447,NA,NA,31.0,0.31,0.0,0.0,0.178
+Health & Well-being,NA,NA,346.0,3.0788,NA,NA,NA,NA,0.8552
+Income Strategies,NA,NA,131.0,1.1657,NA,NA,NA,NA,0.3238
+Discrimination,NA,NA,1.0,0.0089,NA,NA,NA,NA,0.0025
+Anger/Blame,299.0,3.2433,201.0,1.7886,270.0,2.7,13.0,0.13,1.9354
+Frustration/Disappointment,280.0,3.0372,1410.0,12.5467,533.0,5.33,2158.0,21.58,10.8288
+Fear/Anxiety,200.0,2.1694,130.0,1.1568,351.0,3.51,288.0,2.88,2.3951
+Resilience/Hope,193.0,2.0935,443.0,3.942,NA,NA,NA,NA,1.572
+Shock/Disbelief,153.0,1.6596,475.0,4.2267,NA,NA,NA,NA,1.5523
+Confusion/Surprise,NA,NA,NA,NA,161.0,1.61,169.0,1.69,0.8157
+Indifference/Humor,NA,NA,NA,NA,136.0,1.36,13.0,0.13,0.3683
+Resource-sharing,605.0,6.5625,151.0,1.3437,111.0,1.11,35.0,0.35,2.2295
+Legal mobilization,92.0,0.9979,31.0,0.2758,171.0,1.71,1.0,0.01,0.7292
+Organizing boycott,25.0,0.2712,NA,NA,218.0,2.18,3.0,0.03,0.6081
+Structural Critique,NA,NA,502.0,4.467,NA,NA,NA,NA,1.2408
+Peer Advice,NA,NA,111.0,0.9877,NA,NA,NA,NA,0.2744
+Solidarity and appreciation,NA,NA,NA,NA,403.0,4.03,9.0,0.09,1.0184
+Whistleblowing,NA,NA,NA,NA,330.0,3.3,11.0,0.11,0.8429
+Coercive PIPs/Focus,284.0,3.0806,NA,NA,NA,NA,NA,NA,0.702
+Corporate euphemisms,55.0,0.5966,NA,NA,NA,NA,NA,NA,0.1359
+Blame-shifting,46.0,0.499,NA,NA,NA,NA,NA,NA,0.1137
+Disability discrimination,25.0,0.2712,NA,NA,NA,NA,NA,NA,0.0618
+Legal gaslighting,14.0,0.1519,NA,NA,NA,NA,NA,NA,0.0346
+Compliance Weaponization,NA,NA,NA,NA,365.0,3.65,NA,NA,0.9022
+Policy Gaslighting,NA,NA,NA,NA,56.0,0.56,NA,NA,0.1384
+Responsibility Obfuscation,NA,NA,NA,NA,25.0,0.25,NA,NA,0.0618
+Recruiter ghosting,25.0,0.2712,NA,NA,NA,NA,NA,NA,0.0618
+Visa-filter bias,13.0,0.141,NA,NA,NA,NA,NA,NA,0.0321
+Résumé-filter bias,9.0,0.0976,NA,NA,NA,NA,NA,NA,0.0222
+Startup/Small Tech vulnerability,13.0,0.141,NA,NA,NA,NA,NA,NA,0.0321
+Industry contagion,12.0,0.1302,NA,NA,NA,NA,NA,NA,0.0297
+Big Tech privilege,8.0,0.0868,NA,NA,NA,NA,NA,NA,0.0198
+Solidarity & Story-sharing,NA,NA,134.0,1.1924,NA,NA,NA,NA,0.3312
+Stigma & Social Reactions,NA,NA,92.0,0.8187,NA,NA,NA,NA,0.2274
+Industry-specific Culture,NA,NA,22.0,0.1958,NA,NA,NA,NA,0.0544
+Probationary targeting,NA,NA,NA,NA,425.0,4.25,NA,NA,1.0505
+Disability penalties,NA,NA,NA,NA,75.0,0.75,NA,NA,0.1854
+Immigrant weaponization,NA,NA,NA,NA,6.0,0.06,NA,NA,0.0148
+Salary negotiation,NA,NA,NA,NA,NA,NA,274.0,2.74,0.6773
+Interview advice,NA,NA,NA,NA,NA,NA,165.0,1.65,0.4078
+Seeking referral,NA,NA,NA,NA,NA,NA,31.0,0.31,0.0766
+Individual layoff,NA,NA,NA,NA,NA,NA,70.0,0.7,0.173
