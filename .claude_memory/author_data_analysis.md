@@ -6,124 +6,48 @@ type: reference
 
 # Author Data Analysis
 
-## 1. Data: What Was Fetched, How, and What's Relevant
+## 1. Data Pipeline & Files
 
-### Source: Author Name Lists
-Authors were extracted from subreddit-level post data (collected via Arctic-Shift API). One CSV per source subreddit, stored in `data_collection/reddit/author_data/subredditwise_author_lists_csv/`:
+All paths relative to `data_collection/reddit/author_data/`.
 
-| File | Authors |
-|------|---------|
-| `authors_of_fednews_subreddit.csv` | 23,456 |
-| `authors_of_jobs_subreddit.csv` (+ batch 2/3/4) | ~178,969 |
-| `authors_of_layoffs_subreddit.csv` | 5,760 |
-| **Total unique** | **~208K** |
+### Data Layers
 
-### Fetch Pipeline
-Script: `data_collection/reddit/author_data/fetch_author_data_layoffs.py`
+1. **Author lists** — `subredditwise_author_lists_csv/`
+   CSVs of ~208K author names extracted from posts in r/fednews, r/jobs, and r/layoffs. Input to the fetch pipeline.
 
-1. Read author names from CSV
-2. For each author, call **Arctic-Shift API** (`arctic-shift.photon-reddit.com/api/posts/search`) to download **all their posts across all of Reddit** within a fixed date range: **2022-01-01 to 2025-04-30**
-3. Per post, keep: `subreddit`, `num_comments`, `title`, `permalink`, `selftext`, `date`, `account_creation_date`
-4. Write one JSONL line per author to output file
+2. **Fetch script** — `fetch_author_data_layoffs.py`
+   For each author, calls the Arctic-Shift API to download **all their posts across all of Reddit** (Jan 2022–Apr 2025). Outputs one JSONL line per author with fields: subreddit, date, title, selftext, num_comments, permalink, account_creation_date.
 
-### Raw Data Files (`data_collection/reddit/author_data/author_activity_across_subreddits/`, ~6.9 GB total)
+3. **Raw author data** — `author_activity_across_subreddits/`
+   ~6.9 GB of JSONL (one file per source subreddit, jobs split into 4 batches). Each line = one author's full cross-Reddit posting history with per-post dates. **Essential for any temporal/trajectory analysis.**
 
-| File | Authors | Size |
-|------|---------|------|
-| `fednews_author_data.jsonl` | 23,456 | 165 MB |
-| `jobs_author_data_batch1.jsonl` | 50,000 | 2.6 GB |
-| `jobs_author_data_batch2.jsonl` | 50,000 | 1.8 GB |
-| `jobs_author_data_batch3.jsonl` | 50,000 | 1.6 GB |
-| `jobs_author_data_batch4.jsonl` | 28,969 | 700 MB |
-| `layoffs_author_data.jsonl` | 5,760 | 265 MB |
-| **Total** | **208,185** | **~6.9 GB** |
+4. **Aggregated counts** — `*_subredditwise_post_counts.jsonl` (root level)
+   Per-author subreddit post counts with no dates — collapses temporal info. Exists for fednews and jobs; **missing for layoffs**. Used as input to the clustering pipeline.
 
-### Raw Data Structure (one JSONL line per author)
-```json
-{
-  "user": {
-    "author": "username",
-    "author_fullname": "t2_xxxxx",
-    "account_creation_date": "2019-05-12"
-  },
-  "posts": [
-    {
-      "subreddit": "fednews",
-      "num_comments": 12,
-      "title": "Post title...",
-      "permalink": "/r/fednews/comments/...",
-      "selftext": "Post body text...",
-      "date": "2025-01-01"
-    }
-  ],
-  "metadata": {
-    "date_range": "2022-01-01 to 2025-04-30",
-    "post_count": 5
-  }
-}
-```
+5. **Derived analysis files** (produced by `eda.ipynb`):
+   - `subreddit_analysis.json` — per-subreddit post totals and top authors across all 154K subreddits; used for filtering
+   - `common_authors.json` — pairwise author intersections between subreddits
+   - `co_occurrence_matrix_2_my_approach.csv` — 170×170 subreddit co-occurrence matrix (shared author counts); direct input to UMAP+DBSCAN
 
-### Aggregated Data (subreddit-wise counts, derived from raw)
+6. **Trajectory data** — `alternate_approach/` (produced by `author_analysis_v2.ipynb`):
+   - `all_authors_first_post.csv` — 206K unique authors with their earliest post date and source subreddit
+   - `all_authors_subreddit_timeline.jsonl` — chronological (date, subreddit) timelines for 195K authors; built from raw data
 
-Files: `fednews_authors_subredditwise_post_counts.jsonl` (23,429 authors), `jobs_authors_subredditwise_post_counts.jsonl` (149,005 authors). **Note: `layoffs_authors_subredditwise_post_counts.jsonl` is missing** — was likely generated but not saved or was lost.
+7. **Visualizations** — cluster plots in `cluster_plots/`, `visualization/`, and root-level PNGs from various UMAP/DBSCAN runs
 
-Structure (one JSONL line per author):
-```json
-{
-  "author": "username",
-  "subreddit_counts": [
-    {"subreddit": "fednews", "count": 4},
-    {"subreddit": "usajobs", "count": 1}
-  ]
-}
-```
-
-**Key difference**: aggregated files lose temporal information (no dates). Raw data files retain per-post dates.
-
-### What's Relevant for Author Analysis
-
-| Field | In Raw | In Aggregated | Relevance |
-|-------|--------|---------------|-----------|
-| `author` | yes | yes | Identity |
-| `subreddit` (per post) | yes | collapsed to counts | Where they post |
-| `date` (per post) | **yes** | **no** | Temporal trajectories |
-| `selftext` | yes | no | Content analysis (optional) |
-| `num_comments` | yes | no | Engagement proxy |
-| `account_creation_date` | yes | no | Account age |
-
-**For temporal/trajectory analysis, the raw data files (`author_activity_across_subreddits/`) are essential.** The aggregated files only support static cross-community analysis.
+### Key Distinction: Raw vs Aggregated
+Raw data retains per-post dates, text, and engagement — needed for temporal analysis. Aggregated counts only support static cross-community analysis (no dates, no text).
 
 ---
 
 ## 2. Previous Clustering Approach (Paper Section 3.2.2)
 
-### Goal
-Identify thematic groupings of subreddits based on shared authorship with r/fednews, r/jobs, and r/layoffs. Unit of analysis = **subreddits** (not authors).
+### Overview
+Unit of analysis = **subreddits** (not authors). Goal: identify thematic groupings of subreddits based on shared authorship with the 3 source subs. Implemented in `eda.ipynb`.
 
-### Pipeline (in `eda.ipynb`)
+**Pipeline:** aggregated post counts → filter to 170 subreddits (≥5K posts) → build 170×170 co-occurrence matrix (shared authors) → log-normalize → UMAP (n_neighbors=15, min_dist=0.1) → DBSCAN (eps=0.5, min_samples=5) → **7 clusters + 7 outliers**.
 
-**Step 1: Build author→subreddit mapping**
-- Read all 3 `*_subredditwise_post_counts.jsonl` files
-- For each author, record which subreddits they posted in
-- Result: 208K authors × 154K unique subreddits
-
-**Step 2: Filter subreddits**
-- From `subreddit_analysis.json`, keep only subreddits with **≥5,000 total posts** across all authors
-- Result: **170 subreddits** retained
-
-**Step 3: Build co-occurrence matrix**
-- 170 × 170 matrix where cell[i][j] = number of authors who posted in both subreddit i and subreddit j
-- Two versions were tried:
-  - `co_occurrence_matrix_2.csv` — initial version (file no longer exists)
-  - `co_occurrence_matrix_2_my_approach.csv` — final version used in paper (170 × 170)
-
-**Step 4: Dimensionality reduction + clustering**
-- **Log-normalize**: `np.log1p()` on co-occurrence counts
-- **UMAP**: `n_components=2, n_neighbors=15, min_dist=0.1, random_state=42`
-- **DBSCAN**: `eps=0.5, min_samples=5`
-- Result: **7 clusters + 1 outlier group** (7 subreddits as outliers)
-
-### Results (7 Clusters, Figure 4 in paper)
+### Results (Figure 4 in paper)
 
 | Cluster | Size | Theme |
 |---------|------|-------|
@@ -136,66 +60,87 @@ Identify thematic groupings of subreddits based on shared authorship with r/fedn
 | 6 | 15 | Practical how-to / household advice (AskHR, DIY, pets, taxes) |
 | Outliers | 7 | recruitinghell, resumes, techsupport, Monopoly_GO, MonopolyGoTrading, PokemonGoRaids, USCIS |
 
-### Exploratory methods tried but not used in paper
-- PCA + scatter (on `co_occurrence_matrix_2_my_approach.csv`)
-- PCA + K-Means (k=10)
-- t-SNE
-
-### Limitations of Previous Approach
-1. **Unit = subreddits, not authors**: Tells us "which communities share users" but not "how individual authors move between communities"
-2. **No temporal dimension**: Collapses all posting activity into static counts — can't distinguish pre-layoff vs post-layoff behavior
-3. **No directionality**: Co-occurrence doesn't capture whether authors went from r/jobs → r/mentalhealth or vice versa
-4. **Aggregated features lose individual variation**: An author posting 500 times in r/fednews and one posting 2 times contribute equally to presence
+### Limitations
+1. **Unit = subreddits, not authors** — shows which communities share users, not how individuals move between them
+2. **No temporal dimension** — collapses all activity into static counts; can't distinguish pre- vs post-layoff behavior
+3. **No directionality** — co-occurrence doesn't capture whether authors went r/jobs → r/mentalhealth or vice versa
+4. **No individual variation** — a 500-post author and a 2-post author contribute equally to presence
 
 ---
 
-## 3. New Approach: Author Trajectory Analysis (Brainstorming)
+## 3. New Approach: Author Trajectory Analysis
 
 ### Core Idea
-Shift the unit of analysis from **subreddits** to **authors**. For each author, model how their posting behavior across communities **changes over time**, particularly around a layoff-related "anchor event."
+Shift the unit of analysis from **subreddits** to **authors**. For each author, model how their posting behavior across communities **changes over time**, particularly around a layoff-related "anchor event." Implemented in `alternate_approach/author_analysis_v2.ipynb`.
 
-### Key Design Decisions (to discuss)
+### What's Been Built
 
-**What defines the anchor event?**
-- Option A: First post in one of the 3 source subreddits (fednews/jobs/layoffs)
-- Option B: First post in any layoff-related subreddit (broader set)
-- Option C: Peak activity period in source subreddit
-- This determines the "before" vs "after" split for each author
+**Step 1: Combined author list** — merged author CSVs from all 3 source subreddits, deduplicated, kept earliest post date per author. Output: `all_authors_first_post.csv` (206,778 unique authors; fednews: 23K, jobs: 178K, layoffs: 5.7K).
 
-**What is the feature representation per author?**
+**Step 2: Timeline extraction** — read all raw JSONL (~6.9GB), extracted chronological (date, subreddit) pairs per author. Output: `all_authors_subreddit_timeline.jsonl` (195,799 authors). Has configurable `MIN_TOTAL_POSTS` and `MIN_OTHER_SUBS` filters (currently 0 = no filtering).
+
+**Step 3: Exploratory stats** — key findings that inform next steps:
+
+| Metric | All | fednews | jobs | layoffs |
+|--------|-----|---------|------|---------|
+| Median posts | 14 | 3 | 18 | 16 |
+| Median distinct subs | 9 | — | — | — |
+| Post only in source sub | 10.3% | 37.1% | 6.9% | 0% |
+| Have both before & after anchor | 61.5% | 28.4% | 66.0% | 64.8% |
+
+- 125K authors post in ≥5 non-source subreddits — substantial pool for trajectory analysis
+- fednews authors are sparser (low post counts, 37% never post elsewhere) and mostly lack pre-anchor activity (only 28.4% have both before & after) — this constrains before/after analysis for the gov-sector cohort
+
+### Open Design Decisions
+
+**Anchor event definition**
+- Current default: first post in source subreddit (fednews/jobs/layoffs)
+- Alternatives: first post in any layoff-related sub, or peak activity period
+
+**Feature representation per author**
 - Subreddit distribution vectors (before vs after anchor)
-- Cluster-category distribution (map subreddits to the 7 clusters from previous analysis, then track shifts)
+- Cluster-category distribution (map subs to the 7 clusters from Section 2, track shifts)
 - Activity volume changes (posting frequency before vs after)
 - Diversity metrics (entropy of subreddit distribution before vs after)
+- Each author → feature vector → cluster *authors* by trajectory pattern
 
-**What is the analysis unit?**
-- Each author becomes a data point
-- Feature vector could be: [before_cluster_dist, after_cluster_dist, delta_features]
-- Then cluster *authors* by their trajectory patterns
+**Minimum activity thresholds** — informed by stats above:
+- ~57K authors have ≤5 posts total; ~20K post only in source sub
+- Need to balance sample size vs signal quality
 
 **Temporal windowing**
 - Fixed windows (e.g., 3 or 6 months before/after anchor)
-- Sliding windows across the full 2022-2025 range
-- Need to handle authors with short histories
-
-**Minimum activity threshold**
-- Authors with very few posts outside source subreddits won't have meaningful trajectories
-- Need to define minimum post count for inclusion
+- Sliding windows across 2022–2025
+- Handle authors with short histories
 
 ### What This Could Reveal
-- Do fednews authors migrate to crisis/mental-health subs after layoff events (gov sector pattern)?
-- Do layoffs authors shift toward career-change communities (private sector pattern)?
-- Are there distinct trajectory archetypes (e.g., "the pivoter," "the venter," "the lurker-turned-poster")?
+- Do fednews authors migrate to crisis/mental-health subs after layoff events (gov sector)?
+- Do layoffs authors shift toward career-change communities (private sector)?
+- Distinct trajectory archetypes (e.g., "the pivoter," "the venter," "the lurker-turned-poster")?
 - Cross-sector comparison: different coping trajectories for gov vs tech vs general workforce
 
-### Data Requirements
-- **Must use raw data files** (`author_activity_across_subreddits/*.jsonl`) — need per-post dates
-- Layoffs aggregated counts file (`layoffs_authors_subredditwise_post_counts.jsonl`) needs to be regenerated from raw data
-- May need to re-map subreddits to the 7 cluster categories for feature engineering
+
+### Next Step
+## First visualization
+create a box-whisker plot. one box-whisker for one month window.
+So in the horizontal axis, I mean the x axis, there would be seven points. First point would be one month prior and the rest six would be six months after the anchor event. Now for each point in the x axis, on the y axis there would be a box-whisker plot. 
+The first box would contain the number of posts made by all the authors one month prior to their anchor event.
+Note : I am not sure about how percentile would come into play here.
+
+## Second visualization
+For second one, the x axis would be same. 7 points for one month each. And we are going to use the seven clusters we got from previous analysis. And we will need the subreddit names of each cluster. 
+Now, let me explain what the first point would have. On the y-axis for the first point, there would be seven circles stacked on top of each other. 
+Each circle would represent how many times all the authors visited subreddits of that particular cluster one month prior to their anchor event. The size of the circles would vary depending on the number.
+
+Note : Need to import the clusters and the subreddits of each cluster.
+If one circle is too big, then we can start by putting the number or count inside equal sized circles.
 
 ### Status
-- [ ] Finalize anchor event definition
+- [x] Build combined author list with first post dates
+- [x] Extract per-author subreddit timelines from raw data
+- [x] Run exploratory distribution analysis
+- [x] Finalize anchor event definition
 - [ ] Decide feature representation
-- [ ] Set minimum activity thresholds
-- [ ] Build pipeline
-- [ ] Run analysis
+- [x] Set minimum activity thresholds
+- [ ] Build trajectory feature pipeline
+- [ ] Run clustering on author trajectories
