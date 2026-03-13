@@ -8,7 +8,7 @@ type: project
 
 ### Data Collection
 - `data_collection/reddit/` — Arctic-Shift API scripts (`data_collection_script.py`, `download_and_filter_posts.py`, `download_and_filter_comments.py`). Produced the 375K posts.
-- `data_collection/reddit/author_data/` — Cross-subreddit author behavior analysis. `fetch_author_data_layoffs.py` fetches 208K authors' posting history. `eda.ipynb` builds co-occurrence matrix, runs UMAP+DBSCAN → Figure 4 + Table 4. Author CSV lists in `author_name_csv_files/`.
+- `data_collection/reddit/author_data/` — Cross-subreddit author behavior analysis. `fetch_author_data_layoffs.py` fetches 208K authors' posting history. `eda.ipynb` builds co-occurrence matrix, runs UMAP+DBSCAN → Figure 4 + Table 4. Author CSV lists in `subredditwise_author_lists_csv/`. Raw per-author post data in `author_activity_across_subreddits/`.
 - `data_collection/teamblind/` — Selenium/BeautifulSoup scraper (`spider_logger_v2.py`, `post_and_comment_from_posts_href.py`). Produced 9,219 Blind posts.
 - `data_collection/reddit/layoffs/` — r/layoffs raw data (.zst archives) + `analysis.ipynb` for early exploration.
 
@@ -56,4 +56,6 @@ Removed (all recoverable from git history):
 
 ## Next Steps
 
-- New approach to author data analysis (to be defined)
+divide the whole timeline into multiple chunks. 3-6 months in each.
+then,
+for each author, find out the time they posted in 1of3 major subreddits. then analyze their subreddit movement before(1 or 2 months)  and after that point. based on that, you can cluster authors and try to find patters, disparaties.
