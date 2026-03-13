@@ -12,11 +12,11 @@ type: project
 - `data_collection/teamblind/` — Selenium/BeautifulSoup scraper (`spider_logger_v2.py`, `post_and_comment_from_posts_href.py`). Produced 9,219 Blind posts.
 - `data_collection/reddit/layoffs/` — r/layoffs raw data (.zst archives) + `analysis.ipynb` for early exploration.
 
-### Qualitative Coding (4 platforms)
-- `reddit_and_teamblind_combined/layoffs_qual_analysis/` — r/layoffs: 11,236 labeled posts
-- `reddit_and_teamblind_combined/jobs_qual_analysis/` — r/jobs: 10,000 labeled posts
-- `reddit_and_teamblind_combined/fednews_qual_analysis/` — r/fednews: 10,000 labeled posts
-- `reddit_and_teamblind_combined/teamblind_qual_analysis/` — TeamBlind: 9,399 labeled posts
+### Qualitative Coding (4 platforms) — `reddit_and_teamblind_combined/qualitative_analysis/`
+- `layoffs_qual_analysis/` — r/layoffs: 11,236 labeled posts
+- `jobs_qual_analysis/` — r/jobs: 10,000 labeled posts
+- `fednews_qual_analysis/` — r/fednews: 10,000 labeled posts
+- `teamblind_qual_analysis/` — TeamBlind: 9,399 labeled posts
 
 Each has: codebook/prompt (`*_prompt.txt`), labeled data (`*_with_post_id_and_labels.jsonl`), validation samples (`*_labeled_by_researcher.jsonl`), AI vs human comparison CSVs, frequency outputs (`code_frequency.csv`, `theme_frequency.csv`), and a visualization notebook.
 
@@ -25,10 +25,12 @@ Each has: codebook/prompt (`*_prompt.txt`), labeled data (`*_with_post_id_and_la
 - `reddit_and_teamblind_combined/subcode_platform_summary.csv` — Cross-platform code frequencies (64 subcodes)
 - `reddit_and_teamblind_combined/theme_platform_summary.csv` — Cross-platform theme frequencies (14 themes)
 
+### reddit_and_teamblind_combined/ reorganized subfolders
+- `raw_data/` — All intermediate/raw data: raw post/comment JSONL dumps, sampled files, combined files, split_files_* batch folders, split_labeled_files_fednews/
+- `exploratory/` — Non-paper items: playground2.ipynb, misc_tasks.ipynb, 100_samples_to_analyze/, 100_sample_comments_to_analyze/, flairwise_reddit/, monthly_post_plots/, stale PNGs, inflection point CSVs, authorlistgeneration.py
+
 ### Other Remaining Files
 - `data_analysis.ipynb` — Root-level EDA (exploratory, not in paper)
-- `reddit_and_teamblind_combined/playground2.ipynb` — Alternate analysis notebook
-- `reddit_and_teamblind_combined/misc_tasks.ipynb` — Utility analyses
 - `demo_*.json/jsonl` — Data structure examples
 
 ## Author Data Analysis (Section 3.2.2 — Current approach)
