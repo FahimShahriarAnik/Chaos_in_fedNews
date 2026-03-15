@@ -57,3 +57,45 @@ Source: `visualization/umap_dbscan_clusters.txt`
 | Date | Change |
 |------|--------|
 | 2026-03-13 | Initial creation. Added design decisions, tweakable params, window definition, cluster map. |
+| 2026-03-15 | Built visualization pipeline as .py workflow. Generated first Viz 1 & Viz 2 outputs. |
+
+## Visualization
+
+### Pipeline
+
+- **Location**: `visualization/` subfolder (3 files)
+- **Run**: `cd visualization && python3 visualize.py`
+- **Output**: two PNGs saved in `visualization/`
+
+| File | Role |
+|------|------|
+| `config.py` | All tweakable params + paths |
+| `data_processing.py` | Cluster parsing + timeline loading/binning |
+| `visualize.py` | Plot functions + `main()` entry point |
+
+### Viz 1 — Box-Whisker (post count distribution per window)
+
+- Per-author post counts binned into 7 monthly windows (1 before, 6 after anchor)
+- 2×2 grid: combined + r/fednews + r/jobs + r/layoffs
+- Before-window colored red, after-windows blue; median annotated on each box
+- Saved as `viz1_boxwhisker_post_counts.png`
+
+### Viz 2 — Bubble Chart (cluster visits per window)
+
+- Aggregate post counts per (window × cluster) — only 163 clustered subreddits
+- 2×2 grid: combined + per-cohort
+- Circle size ∝ √count; count label inside each circle
+- 7 cluster rows on y-axis, 7 windows on x-axis
+- Saved as `viz2_bubble_cluster_counts.png`
+
+### First-run stats (2026-03-15, no filters)
+
+| Metric | Value |
+|--------|-------|
+| Authors | 195,799 |
+| Posts binned into windows | 4,243,893 |
+| Posts outside window range | 7,481,115 |
+| Posts in clustered subs | 1,153,487 |
+| fednews authors | 23,137 |
+| jobs authors | 167,823 |
+| layoffs authors | 4,839 |
