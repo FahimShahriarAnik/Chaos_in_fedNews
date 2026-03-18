@@ -120,27 +120,39 @@ Shift the unit of analysis from **subreddits** to **authors**. For each author, 
 - Cross-sector comparison: different coping trajectories for gov vs tech vs general workforce
 
 
-### Next Step
-## First visualization
-create a box-whisker plot. one box-whisker for one month window.
-So in the horizontal axis, I mean the x axis, there would be seven points. First point would be one month prior and the rest six would be six months after the anchor event. Now for each point in the x axis, on the y axis there would be a box-whisker plot. 
-The first box would contain the number of posts made by all the authors one month prior to their anchor event.
-Note : I am not sure about how percentile would come into play here.
+### Visualization (completed 2026-03-15)
 
-## Second visualization
-For second one, the x axis would be same. 7 points for one month each. And we are going to use the seven clusters we got from previous analysis. And we will need the subreddit names of each cluster. 
-Now, let me explain what the first point would have. On the y-axis for the first point, there would be seven circles stacked on top of each other. 
-Each circle would represent how many times all the authors visited subreddits of that particular cluster one month prior to their anchor event. The size of the circles would vary depending on the number.
+Code: `alternate_approach/visualization/` (3 .py files: `config.py`, `data_processing.py`, `visualize.py`)
 
-Note : Need to import the clusters and the subreddits of each cluster.
-If one circle is too big, then we can start by putting the number or count inside equal sized circles.
+#### Viz 1 — Box-Whisker Plot (post count distribution per window)
+
+1. Defined 7 monthly windows relative to each author's anchor date (first post in source sub): 1 month before `[-30, 0)` and 6 months after `[0,30)`, `[30,60)`, ..., `[150,180)`
+2. For each author, counted total posts in each window (0 if no posts in that window)
+3. Applied optional filters (`MIN_TOTAL_POSTS`, `MIN_OTHER_SUBS`) — default: no filtering
+4. Plotted box-whisker per window — box = IQR, whiskers = 1.5×IQR, dots = outliers, median annotated
+5. Generated 2×2 grid: all authors combined + r/fednews + r/jobs + r/layoffs separately
+
+#### Viz 2 — Bubble Chart (cluster visits per window)
+
+1. Imported the 7 DBSCAN clusters (163 subreddits) from previous analysis (`umap_dbscan_clusters.txt`)
+2. Built mapping: subreddit → cluster_id; ignored outliers and unclustered subs (~154K subs excluded)
+3. For each post that fell in a window AND in a clustered subreddit, incremented `(window, cluster)` count
+4. Plotted bubble chart: x-axis = 7 windows, y-axis = 7 cluster rows, circle size ∝ √(post count), count label inside each circle
+5. Generated 2×2 grid: combined + per-cohort (same layout as Viz 1)
+
+#### Key design decisions
+- Anchor = first post date in source subreddit; ±30 days per window
+- Unclustered subs ignored in Viz 2
+- No author filtering by default, but parameterized in `config.py`
+- Both combined and per-cohort views (supports RQ2: gov vs private vs tech)
 
 ### Status
 - [x] Build combined author list with first post dates
 - [x] Extract per-author subreddit timelines from raw data
 - [x] Run exploratory distribution analysis
 - [x] Finalize anchor event definition
-- [ ] Decide feature representation
 - [x] Set minimum activity thresholds
+- [x] Build Viz 1 (box-whisker) and Viz 2 (bubble chart)
+- [ ] Decide feature representation
 - [ ] Build trajectory feature pipeline
 - [ ] Run clustering on author trajectories
